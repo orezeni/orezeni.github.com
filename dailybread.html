@@ -5,21 +5,19 @@ title: The Daily Bread
 
 <script>
 
-var os_path = 'http://assets.openspending.org/openspendingjs/master';
-
 yepnope({
 	load: [
 		// 'http://wheredoesmymoneygo.org/wp-content/themes/wdmmg/wdmmg.css',
 		'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/themes/ui-lightness/jquery-ui.css',
 		'http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js',
 		'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js',
-		os_path + '/lib/vendor/base64.js',
-		os_path + '/lib/vendor/underscore.js',
-		os_path + '/lib/vendor/raphael-min.js',
+		'/js/libs/base64.js',
+		'/js/libs/underscore.js',
+		'/js/libs/raphael-min.js',
 		'/js/aggregator.js',
-		os_path + '/app/dailybread/css/dailybread.css',
-		os_path + '/app/dailybread/js/cofog.js',
-		os_path + '/app/dailybread/js/dailybread.js'
+		'/css/dailybread.css',
+		'/js/cofog.js',
+		'/js/dailybread.js'
 	],
 	complete: function() {
 	
@@ -36,6 +34,7 @@ yepnope({
 					 dataset: 'ukgov-finances-cra',
 					 drilldowns: ['cofog1', 'cofog2', 'cofog3'],
 					 cuts: ['year:2008'],
+					 cuts: [],
 					 rootNodeLabel: 'Total', 
 					 breakdown: 'region',
 					 callback: function(data) {
