@@ -1,0 +1,165 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Team - Where Does My Money Go?</title>
+  <meta name="description" content="We show the story of where the UK taxpayer money is spent through beautiful visualizations.">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+    <div class="container">
+      <div id="logo">
+        <a href="/">
+          <img src="img/logo.png" alt="Where Does My Money Go?">
+          <div id="claim">
+            Showing you where your taxes get spent
+          </div>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav nav-tabs">
+          <li><a href="about.html">About</a></li>
+          <li><a href="spending.html">Departmental Spending</a></li>
+          <li><a href="bubbletree-map.html">Country &amp; Regional Analysis</a></li>
+          <li><a href="dailybread.html">The Daily Bread</a></li>
+        </ul>
+      </nav>
+      <script type="text/javascript">
+        $(function() {
+          $('ul.nav-tabs a').each(function(i,el) {
+            if (window.location.href.indexOf($(el).attr('href')) > 0) {
+		      $(el).addClass('active');
+            }
+          });
+        });
+      </script>
+    </div>
+  </header>
+
+  <div class="container">
+    <style>
+    .credits ul li {
+        margin-bottom: 0.4em;
+        margin-top: 0.2em;
+    }
+</style>
+
+<h2 class="page-header">Core Team</h2>
+
+<div class="row credits">
+  <div class="span8 offset4">
+
+<p>The core team working on <strong>Where Does My Money Go?</strong> includes:</p>
+
+<ul>
+<li>Jonathan Gray, <a href="http://www.okfn.org">Open Knowledge Foundation</a> (Founder and Researcher)</li>
+<li>Rufus Pollock, <a href="http://www.okfn.org">Open Knowledge Foundation</a> and <a href="http://www.cam.ac.uk">Cambridge University</a> (Project Lead)</li>
+<li>Lisa Evans, <a href="http://www.okfn.org">Open Knowledge Foundation</a> (Research and Analysis)</li>
+<li>Tim Hubbard, <a href="http://www.sanger.ac.uk/">Sanger Institute</a> (Research and Cuts App)</li>
+<li>David McCandless, <a href="http://www.informationisbeautiful.net/">Information is Beautiful</a> (Art Direction and Icons)</li>
+<li>Chris Taggart, <a href="http://openlylocal.com/">Openly Local</a> (Local data expert)</li>
+<li>Lucy Chambers, <a href="http://www.okfn.org">Open Knowledge Foundation</a> (Community Coordination)</li>
+<li>Gregor Aisch, <a href="http://www.okfn.org">Open Knowledge Foundation</a> (JavaScript-based visualisations)</li>
+<li>Nick Stenning, <a href="http://www.okfn.org">Open Knowledge Foundation</a> (Developer)</li>
+<li>Friedrich Lindenberg, <a href="http://www.okfn.org">Open Knowledge Foundation</a> (Developer)</li>
+<li><a href="http://openspending.org/getinvolved/"><em>Your name here &#8230;</em></a></li>
+</ul>
+
+<h3>Emeritus</h3>
+
+<ul>
+<li>Alistair Turnbull, (Lead Backend Developer until July 2010)</li>
+<li><a href="http://kathryncorrick.co.uk/">Kathryn Corrick</a>, Communications and Community</li>
+<li><a href="http://cummaford.wordpress.com/about/">Steve Cummaford</a> (UX Lead)</li>
+<li>David Boyce and Liz Turner, <a href="http://www.iconomical.com">Iconomical</a> (Visualization and Flash Component)</li>
+<li>Martin Keegan, <a href="http://www.okfn.org">Open Knowledge Foundation</a> (Project lead)</li>
+</ul>
+
+<h2>Project advisory team</h2>
+
+<ul>
+<li>Gary Bass, <a href="http://www.ombwatch.org/">OMB Watch</a></li>
+<li>Michael Blastland, Statistical Writer and Broadcaster</li>
+<li>Christopher Chantrill, <a href="http://www.ukpublicspending.co.uk/">UK Public Spending</a></li>
+<li>Ben Farrugia, <a href="http://www.taxpayersalliance.com/">Tax Payers&#8217; Alliance</a></li>
+<li><a href="http://ouseful.info">Tony Hirst</a>, Lecturer, <a href="http://www.open.ac.uk/">The Open University</a></li>
+<li>Manuel Lima, <a href="http://www.visualcomplexity.com">Visual Complexity</a></li>
+<li>Ellen Miller, <a href="http://www.sunlightfoundation.com/">Sunlight Foundation</a></li>
+<li>Andrew Vande Moere, <a href="http://www.infosthetics.com">Infosthetics</a></li>
+<li><a href="http://www.kaasogmulvad.dk/">Nils Mulvad</a>, EU Transparency + <a href="http://farmsubsidy.org/">Farm Subsidy</a></li>
+<li>Michael Robinson, Head of Graphics, <a href="http://www.guardian.co.uk/">The Guardian</a></li>
+<li><a href="http://www.guardian.co.uk/profile/simonrogers">Simon Rogers</a>, News Editor, <a href="http://www.guardian.co.uk/">The Guardian</a></li>
+<li>Tom Steinberg, <a href="http://www.mysociety.org/">mySociety</a></li>
+<li><a href="http://www.ifs.org.uk/people/profile/139">Gemma Tetlow</a>, Senior Research Economist, <a href="http://www.ifs.org.uk/">Institute for Fiscal Studies</a></li>
+<li><a href="http://jackthurston.com/">Jack Thurston</a>, EU Transparency + <a href="http://farmsubsidy.org/">Farm Subsidy</a></li>
+</ul>
+
+</div>
+</div>
+  </div>
+
+  <footer>
+    <div class="inner">
+      <div class="container">
+        <p>
+          Where Does My Money Go? is based on <a href="http://openspending.org">OpenSpending</a>, where you can also find the 
+          <a href="http://openspending.org/ukgov-finances-cra">source data</a>. <br/>
+          This is an <a href="http://okfn.org">Open Knowledge Foundation</a> project, developed with generous support from 
+          <a href="http://www.channel4.com/programmes/4ip">Channel 4's 4iP</a>.
+        </p>
+
+        <ul class="footer-links span4 pull-left">
+          <li><a href="http://openspending.org">OpenSpending</a></li>
+          <li><a href="http://thedatahub.org">TheDataHub</a></li>
+          <li><a href="http://okfnlabs.org">OKFN Labs</a></li>
+          <li><a href="http://yourtopia.net">YourTopia</a></li>
+        </ul>
+        <ul class="footer-links span4 pull-left">
+          <li><a href="team.html">Core team</a></li>
+          <li><a href="sources.html">Data sources</a> used on this site</li>
+          <li><a href="http://openspending.org/help/contact.html">Get in touch</a> and contribute</li>
+          <li><a href="https://github.com/openspending/wheredoesmymoneygo.org">Code</a> and making your own</li>
+          <li><a href="http://okfn.org/privacy-policy/">Privacy Policy</a></li>
+        </ul>
+
+        All <a href="http://creativecommons.org/licenses/by/3.0/">content</a>, 
+        <a href="http://www.gnu.org/licenses/agpl.html">code</a> 
+        and <a href="http://opendatacommons.org/licenses/odbl/">data</a> is 
+        openly licensed in accordance with the 
+        <a href="http://opendefinition.org/">open definition</a>.
+        <br/>
+        <a href="http://opendefinition.org"><img src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="Open Content" /></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    var _gaq=[['_setAccount','UA-8271754-8'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
