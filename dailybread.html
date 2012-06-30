@@ -16,7 +16,7 @@ yepnope({
 		os_path + '/lib/vendor/base64.js',
 		os_path + '/lib/vendor/underscore.js',
 		os_path + '/lib/vendor/raphael-min.js',
-		os_path + '/lib/aggregator.js',
+		'/js/aggregator.js',
 		os_path + '/app/dailybread/css/dailybread.css',
 		os_path + '/app/dailybread/js/cofog.js',
 		os_path + '/app/dailybread/js/dailybread.js'
@@ -31,8 +31,8 @@ yepnope({
 		  	 
 			 var db = new OpenSpending.DailyBread($('#dailybread'));
 			 new OpenSpending.Aggregator({
-					 apiUrl: 'http://openspending.org/api',
-					 //localApiCache: 'aggregate.json',
+					 //apiUrl: 'http://openspending.org/api',
+					 localApiCache: 'aggregate.json',
 					 dataset: 'ukgov-finances-cra',
 					 drilldowns: ['cofog1', 'cofog2', 'cofog3'],
 					 cuts: ['year:2008'],
