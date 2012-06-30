@@ -1,1 +1,12 @@
-_site/*
+#ignore vim swap file
+.*.swp
+.lock-*
+#ignore Desktop Service Store files created by mac
+*.DS_Store
+#ignore generated files
+[Bb]in
+[Dd]ebug*/
+obj/
+[Rr]elease*/
+build/node_modules/*
+
