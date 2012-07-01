@@ -4,7 +4,7 @@ OpenSpending = "OpenSpending" in window ? OpenSpending : {};
 
 var formatCurrency = function (val, prec, sym, dec, sep) {
   prec = prec === undefined ? 2 : prec
-  sym = sym || '£'
+  sym = sym || '¥'
   dec = dec || '.'
   sep = sep || ','
 
@@ -34,13 +34,13 @@ OpenSpending.DailyBread = function (elem) {
   this.iconLookup = function (name) { return undefined; };
 
   this.init = function () {
-    this.setSalary(22000) // default starting salary
+    this.setSalary(4000000) // default starting salary
 
     this.$e.find('.wdmmg-slider').slider({
       value: this.salaryVal,
-      min: 10000,
-      max: 200000,
-      step: 10,
+      min: 1000000,
+      max: 20000000,
+      step: 10000,
       animate: true,
       slide: function () { self.sliderUpdated.apply(self, arguments) }
     })
