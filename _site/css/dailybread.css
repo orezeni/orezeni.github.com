@@ -54,7 +54,7 @@
 #db-topbar div h2 {
   margin: 0;
   padding: 0;
-  font-size: 1.2em;
+  font-size: 1.0em;
   text-transform: uppercase;
 }
 
@@ -76,6 +76,7 @@
 
 #db-tax {
   text-align: right;
+  white-space: nowrap;
 }
 
 /** Slider */
