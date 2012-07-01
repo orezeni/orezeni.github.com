@@ -54,82 +54,82 @@
     <script>
 
 yepnope({
-	load: [
-		// 'http://wheredoesmymoneygo.org/wp-content/themes/wdmmg/wdmmg.css',
-		'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/themes/ui-lightness/jquery-ui.css',
-		'http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js',
-		'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js',
-		'/js/libs/base64.js',
-		'/js/libs/underscore.js',
-		'/js/libs/raphael-min.js',
-		'/js/aggregator.js',
-		'/css/dailybread.css',
-		'/js/cofog.js',
-		'/js/dailybread.js'
-	],
-	complete: function() {
-	
-		(function ($) {
-		
-		  $(function () {
-		    
-		  	 $('#preloader .txt').html('loading data');
-		  	 
-			 var db = new OpenSpending.DailyBread($('#dailybread'));
-			 new OpenSpending.Aggregator({
-					 //apiUrl: 'http://openspending.org/api',
-					 localApiCache: 'aggregate.json',
-					 dataset: 'ukgov-finances-cra',
-					 drilldowns: ['cofog1', 'cofog2', 'cofog3'],
-					 cuts: ['year:2008'],
-					 rootNodeLabel: 'Total', 
-					 breakdown: 'region',
-					 callback: function(data) {
-			
-						$('#content-wrap').show();
-						$('#preloader').remove();
-		  	 
-						db.setDataFromAggregator(data, ['unknown']);
-						db.setIconLookup(function(name) {
-						  var style = OpenSpending.Styles.Cofog[name];
-						  if (style != undefined) {
-							 return style['icon'];
-						  }
-						  return 'icons/unknown.svg';
-						});
-						db.draw();
-					 }
-				  });
-			 })
-		  })(jQuery)	
-	}
+  load: [
+    // 'http://wheredoesmymoneygo.org/wp-content/themes/wdmmg/wdmmg.css',
+    'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/themes/ui-lightness/jquery-ui.css',
+    'http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js',
+    'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js',
+    '/js/libs/base64.js',
+    '/js/libs/underscore.js',
+    '/js/libs/raphael-min.js',
+    '/js/aggregator.js',
+    '/css/dailybread.css',
+    '/js/cofog.js',
+    '/js/dailybread.js'
+  ],
+  complete: function() {
+
+    (function ($) {
+
+      $(function () {
+
+         $('#preloader .txt').html('loading data');
+
+       var db = new OpenSpending.DailyBread($('#dailybread'));
+       new OpenSpending.Aggregator({
+           //apiUrl: 'http://openspending.org/api',
+           localApiCache: 'aggregate.json',
+           dataset: 'ukgov-finances-cra',
+           drilldowns: ['cofog1', 'cofog2', 'cofog3'],
+           cuts: ['year:2008'],
+           rootNodeLabel: 'Total',
+           breakdown: 'region',
+           callback: function(data) {
+
+            $('#content-wrap').show();
+            $('#preloader').remove();
+
+            db.setDataFromAggregator(data, ['unknown']);
+            db.setIconLookup(function(name) {
+              var style = OpenSpending.Styles.Cofog[name];
+              if (style != undefined) {
+               return style['icon'];
+              }
+              return 'icons/unknown.svg';
+            });
+            db.draw();
+           }
+          });
+       })
+      })(jQuery)
+  }
 });
 
 
 </script>
-    
+
 <div id="dailybread">
   <h2 class="page-header">The Daily Bread <small> Costs for the British Taxpayer per Day</small></h2>
 
   <div id="preloader" style="text-align: center; padding: 100px"><img src="img/ajax-loader.gif" style="vertical-align:top" /> &nbsp;<span class="txt">loading javascript libraries</span></div>
 
   <div id="content-wrap" style="display:none">
-	  <div id="db-topbar" class="layout-row layout-3col-15-70-15">
-		 <div id="db-salary" class="layout-col layout-col-1">
-			<h2>Salary</h2>
-			<p>&yen; 4,000,000</p>
-		 </div>
-	
-		 <div id="db-slider" class="layout-col layout-col-2">
-			<h2>Select your salary</h2>
-			<div class="wdmmg-slider"></div>
-		 </div>
-	
-		 <div id="db-tax" class="layout-col layout-col-3">
-			<h2>Your tax</h2>
-			<p>&yen; 31.12</p>
-		 </div>
-	  </div><!-- /#db-topbar -->
+    <div id="db-topbar" class="layout-row layout-3col-15-70-15">
+     <div id="db-salary" class="layout-col layout-col-1">
+      <h2>Salary</h2>
+      <p>&yen; 4,000,000</p>
+     </div>
+
+     <div id="db-slider" class="layout-col layout-col-2">
+      <h2>Select your salary</h2>
+      <div class="wdmmg-slider"></div>
+     </div>
+
+     <div id="db-tax" class="layout-col layout-col-3">
+      <h2>Your tax</h2>
+      <p>&yen; 31.12</p>
+     </div>
+    </div><!-- /#db-topbar -->
   </div>
 
 </div><!-- /#dailybread -->
@@ -148,17 +148,18 @@ yepnope({
         </p>
 
         <ul class="footer-links span4 pull-left">
+          <li><a href="http://wheredoesmymoneygo.org">Where Does My Money Go?</a></li>
           <li><a href="http://openspending.org">OpenSpending</a></li>
           <li><a href="http://thedatahub.org">TheDataHub</a></li>
           <li><a href="http://okfnlabs.org">OKFN Labs</a></li>
-          <li><a href="http://yourtopia.net">YourTopia</a></li>
+          <!--li><a href="http://yourtopia.net">YourTopia</a></li-->
         </ul>
         <ul class="footer-links span4 pull-left">
           <li><a href="team.html">Core team</a></li>
           <li><a href="sources.html">Data sources</a> used on this site</li>
           <!--li><a href="http://openspending.org/help/contact.html">Get in touch</a> and contribute</li-->
           <li><a href="https://github.com/orezeni/wheredoesmymoneygo.yokohama">Code</a> and making your own</li>
-          <li><a href="http://okfn.org/privacy-policy/">Privacy Policy</a></li>
+          <!--li><a href="http://okfn.org/privacy-policy/">Privacy Policy</a></li-->
         </ul>
 
         All <a href="http://creativecommons.org/licenses/by/3.0/">content</a>,
