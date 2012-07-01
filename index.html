@@ -25,7 +25,7 @@ yepnope({
 
       $(function () {
 
-         $('#preloader .txt').html('loading data');
+        $('#preloader .txt').html('loading data');
 
        var db = new OpenSpending.DailyBread($('#dailybread'));
        new OpenSpending.Aggregator({
@@ -51,9 +51,11 @@ yepnope({
             });
             db.draw();
            }
-          });
-       })
-      })(jQuery)
+        });
+
+        OpenSpending.renderDependentTypes(db);
+      });
+    })(jQuery)
   }
 });
 

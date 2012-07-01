@@ -2,7 +2,10 @@ OpenSpending = "OpenSpending" in window ? OpenSpending : {};
 
 (function ($) {
 
-var dependentType = 'single';
+var dependentType = 'single'; // 世帯タイプ初期値
+var baseKoujo = 330000; // 住民税基礎控除
+var huyoKoujo = 330000; // 一人分の扶養控除
+var taxRate = 0.006; // 住民税率
 
 var formatCurrency = function (val, prec, sym, dec, sep) {
   prec = prec === undefined ? 2 : prec
@@ -109,7 +112,7 @@ OpenSpending.DailyBread = function (elem) {
 
   this.setSalary = function (salary) {
     self.salaryVal = salary
-    self.taxVal = 0.4 * salary
+    self.taxVal = (salary - (baseKoujo + (dependentType == 'family' ? huyoKoujo : 0))) * taxRate;
   }
 
   this.draw = function () {
@@ -215,8 +218,7 @@ OpenSpending.DailyBread = function (elem) {
 }
 
 // Draw depentent type icons
-$(function() {
-
+OpenSpending.renderDependentTypes = function(db) {
   function draw(iconPath, target, selected) {
     var iconRad = 35;
 
@@ -257,14 +259,14 @@ $(function() {
       } else {
         dependentType = 'single';
       }
-      // TODO update calc
+      db.setSalary(db.salaryVal);
+      db.draw();
     }
   }
 
   draw('/icons/family.svg', $('#select-dependents-type .family')[0], false);
   draw('/icons/post-secondary.svg', $('#select-dependents-type .single')[0], true);
-});
-
+}
 
 })(jQuery)
 
