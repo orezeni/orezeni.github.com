@@ -24,6 +24,9 @@ audio, canvas, video {
   *display: inline;
   *zoom: 1;
 }
+#logo img{
+  margin-bottom:10px;
+}
 audio:not([controls]) {
   display: none;
 }
