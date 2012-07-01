@@ -61,27 +61,37 @@ yepnope({
 </script>
 
 <div id="dailybread">
+  <!-- 
   <h2 class="page-header">The Daily Bread <small> Costs for the British Taxpayer per Day</small></h2>
+  -->
+  <div>
+    <h2 style="width:240px;display:inline-block;vertical-align:top;">世帯タイプ</h2>
+    <div id="select-dependents-type" style="width:450px;display:inline-block;">
+      <div class="single">単身世帯</div>
+      <div class="family">扶養有り</div>
+    </div>
+    <br style="clear:both;">
+  </div>
 
   <div id="preloader" style="text-align: center; padding: 100px"><img src="img/ajax-loader.gif" style="vertical-align:top" /> &nbsp;<span class="txt">loading javascript libraries</span></div>
 
   <div id="content-wrap" style="display:none">
-    <div id="db-topbar" class="layout-row layout-3col-15-70-15">
-     <div id="db-salary" class="layout-col layout-col-1">
-      <h2>Salary</h2>
-      <p>&yen; 4,000,000</p>
-     </div>
-
-     <div id="db-slider" class="layout-col layout-col-2">
-      <h2>Select your salary</h2>
-      <div class="wdmmg-slider"></div>
-     </div>
-
-     <div id="db-tax" class="layout-col layout-col-3">
-      <h2>Your tax</h2>
-      <p>&yen; 31.12</p>
-     </div>
-    </div><!-- /#db-topbar -->
+	  <div id="db-topbar" class="layout-row layout-3col-15-70-15">
+		 <div id="db-salary" class="layout-col layout-col-1">
+			<h2>Salary</h2>
+			<p>&yen;4,000,000</p>
+		 </div>
+	
+		 <div id="db-slider" class="layout-col layout-col-2">
+			<h2>Select your salary</h2>
+			<div class="wdmmg-slider"></div>
+		 </div>
+	
+		 <div id="db-tax" class="layout-col layout-col-3">
+			<h2>Your tax</h2>
+			<p>&yen;31.12</p>
+		 </div>
+	  </div><!-- /#db-topbar -->
   </div>
 
 </div><!-- /#dailybread -->

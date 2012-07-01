@@ -172,3 +172,37 @@
 }
 */
 
+#select-dependents-type > div {
+  width:80px;
+  text-align:center;
+  display:inline-block;
+  cursor: pointer;
+  margin-left: 90px;
+  color: #999999;
+}
+
+#select-dependents-type > div.active {
+  color: #830242;
+  font-weight: bold;
+}
+
+#select-dependents-type circle {
+  fill: #ffffff;
+  stroke: none;
+}
+
+#select-dependents-type path {
+  fill: #AAAAAA;
+  stroke: none;
+}
+
+#select-dependents-type > div.active circle {
+  fill: #ffffff;
+  stroke: none;
+}
+
+#select-dependents-type > div.active path {
+  fill: #830242;
+  stroke: none;
+}
+
