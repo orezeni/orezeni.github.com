@@ -2,6 +2,8 @@ OpenSpending = "OpenSpending" in window ? OpenSpending : {};
 
 (function ($) {
 
+var dependentType = 'single';
+
 var formatCurrency = function (val, prec, sym, dec, sep) {
   prec = prec === undefined ? 2 : prec
   sym = sym || '\u00A5' // Yen sign
@@ -211,6 +213,45 @@ OpenSpending.DailyBread = function (elem) {
   this.init()
   return this
 }
+
+// Draw depentent type icons
+$(function() {
+
+  function draw(iconPath, target, selected) {
+    var iconRad = 35;
+
+    if (selected) {
+      $(target).addClass('active');
+    }
+
+    $(target).bind('click', handleClick);
+
+    var r = Raphael(target, iconRad * 2, iconRad * 2 + 5);
+    r.circle(iconRad,iconRad,iconRad).attr({ fill: '#830242', stroke: 'none' });
+    r.circle(iconRad,iconRad,iconRad-2).attr({ fill: 'none', stroke: '#eee', opacity: .8, 'stroke-dasharray': '- ' });
+    $.get(iconPath, function(svg) {
+      if (typeof(svg) == "string") {
+        svg = $(svg);
+        svg = svg[svg.length-1];
+      }
+      if (!svg.getElementsByTagName) return;
+      var j, icon,
+      joined='',
+      paths = svg.getElementsByTagName('path');
+      for (j=0;j<paths.length;j++) joined += paths[j].getAttribute('d')+' ';
+      icon = r.path(joined);
+      icon.attr({ fill: 'white', stroke: 'none' });
+      icon.scale(iconRad/50, iconRad/50, 0, 0);
+    });
+  }
+
+  function handleClick(el) {
+  }
+
+  draw('/icons/family.svg', $('#select-dependents-type .family')[0], false);
+  draw('/icons/post-secondary.svg', $('#select-dependents-type .single')[0], true);
+});
+
 
 })(jQuery)
 
