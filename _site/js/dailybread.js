@@ -246,6 +246,19 @@ $(function() {
   }
 
   function handleClick(el) {
+    if ($(this).hasClass('active')) {
+      // NOP
+    } else {
+      $('.active', $(this).parent()).removeClass('active');
+      $(this).addClass('active');
+
+      if ($(this).hasClass('family')) {
+        dependentType = 'family';
+      } else {
+        dependentType = 'single';
+      }
+      // TODO update calc
+    }
   }
 
   draw('/icons/family.svg', $('#select-dependents-type .family')[0], false);
