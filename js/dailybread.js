@@ -4,7 +4,7 @@ OpenSpending = "OpenSpending" in window ? OpenSpending : {};
 
 var formatCurrency = function (val, prec, sym, dec, sep) {
   prec = prec === undefined ? 2 : prec
-  sym = sym || '¥'
+  sym = sym || '\u00A5' // Yen sign
   dec = dec || '.'
   sep = sep || ','
 
