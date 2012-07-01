@@ -267,7 +267,6 @@ var OpenSpending = OpenSpending || {};
           node.label = 'Others';
           node.name = 'others';
         } else if (type === 'object') {
-          value.id = value._id;
           if (value.id === undefined) {
             node.id = 'others';
             node.label = 'Others';
