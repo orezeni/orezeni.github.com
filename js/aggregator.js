@@ -5,7 +5,7 @@ var OpenSpending = OpenSpending || {};
     //siteUrl: 'http://openspending.org',
     siteUrl: location.protocol + location.host,
     dataset: 'cra',
-    drilldowns: ['cofog1', 'cofog2', 'cofog3'],
+    drilldowns: ['cofog1', 'cofog2'],
     cuts: ['year:2008'],
     breakdown: 'region',
     rootNodeLabel: 'Total',
