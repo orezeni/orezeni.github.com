@@ -1,6 +1,7 @@
 
 /* OKFN Brand font, not related to WDMMG. */
 
+/*
 @font-face {
   font-family: 'OpenSansLight';
   src: url('../img/opensans-light-webfont.eot');
@@ -15,6 +16,7 @@
     font-weight: 600;
     src: url("../img/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../img/opensans-semibold-webfont.woff") format("woff"), url("../img/opensans-semibold-webfont.ttf") format("truetype"), url("../img/opensans-semibold-webfont.svg#OpenSansLight") format("svg");
 }
+*/
 
 html {
   background-color: #222222;
@@ -25,7 +27,10 @@ body {
 }
 
 body, p, blockquote p {
+  /*
   font-family: Palatino, georgia, 'times new roman', serif;
+  */
+  font-family: 'times new roman', serif;
   font-size: 16px;
   line-height: 25px;
 }
