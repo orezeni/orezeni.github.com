@@ -32,7 +32,9 @@
       </div>
       <nav>
         <ul class="nav nav-tabs">
-          <li><a href="about.html">About</a></li>
+          <li><a href="/team.html">Core Team</a></li>
+          <li><a href="/sources.html">Data Source</a></li>
+          <li><a href="/about.html">About</a></li>
           <!--li><a href="spending.html">Departmental Spending</a></li-->
           <!--li><a href="bubbletree-map.html">Country &amp; Regional Analysis</a></li-->
           <li><a href="/">The Daily Bread</a></li>
@@ -40,9 +42,10 @@
       </nav>
       <script type="text/javascript">
         $(function() {
+          var path = window.location.pathname;
           $('ul.nav-tabs a').each(function(i,el) {
-            if (window.location.href.indexOf($(el).attr('href')) > 0) {
-          $(el).addClass('active');
+            if (path == $(el).attr('href')) {
+              $(el).addClass('active');
             }
           });
         });
