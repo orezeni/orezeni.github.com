@@ -233,20 +233,17 @@ OpenSpending.DailyBread = function (elem) {
           svg = $(svg);
           svg = svg[svg.length-1];
         }
-        console.log('drawIcons');
         //if (!svg.getElementsByTagName) return;
         try {
           var j, icon,
           joined='',
           paths = svg.getElementsByTagName('path');
-          console.log(paths[0]);
           for (j=0;j<paths.length;j++) joined += paths[j].getAttribute('d')+' ';
           icon = paper.path(joined);
           icon.attr({ fill: 'white', stroke: 'none' });
           icon.scale(iconRad/50, iconRad/50, 0, 0);
         } catch (e) {
           // failed to handle SVG
-          console.log('ERRRRRRR');
         }
       });
     });
@@ -275,12 +272,10 @@ OpenSpending.renderDependentTypes = function(db) {
         svg = $(svg);
         svg = svg[svg.length-1];
       }
-      console.log('== renderDependentTypes ==');
       if (!svg.getElementsByTagName) return;
       var j, icon,
       joined='',
       paths = svg.getElementsByTagName('path');
-      console.log(paths[0]);
       for (j=0;j<paths.length;j++) joined += paths[j].getAttribute('d')+' ';
       icon = r.path(joined);
       icon.attr({ fill: 'white', stroke: 'none' });
