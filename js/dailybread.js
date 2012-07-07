@@ -233,14 +233,18 @@ OpenSpending.DailyBread = function (elem) {
           svg = $(svg);
           svg = svg[svg.length-1];
         }
-        if (!svg.getElementsByTagName) return;
-        var j, icon,
-        joined='',
-        paths = svg.getElementsByTagName('path');
-        for (j=0;j<paths.length;j++) joined += paths[j].getAttribute('d')+' ';
-        icon = paper.path(joined);
-        icon.attr({ fill: 'white', stroke: 'none' });
-        icon.scale(iconRad/50, iconRad/50, 0, 0);
+        //if (!svg.getElementsByTagName) return;
+        try {
+          var j, icon,
+          joined='',
+          paths = svg.getElementsByTagName('path');
+          for (j=0;j<paths.length;j++) joined += paths[j].getAttribute('d')+' ';
+          icon = paper.path(joined);
+          icon.attr({ fill: 'white', stroke: 'none' });
+          icon.scale(iconRad/50, iconRad/50, 0, 0);
+        } catch (e) {
+          // failed to handle SVG
+        }
       });
     });
   }
