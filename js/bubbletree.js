@@ -132,8 +132,6 @@ var BubbleTree = function(config, onHover, onUnHover) {
 	 * used for recursive tree traversal
 	 */
 	me.traverse = function(node, index) {
-    console.info('traverse');
-    console.dir(node);
 		var c, child, pc, me = this, urlTokenSource, styles = me.config.bubbleStyles;
 		
 		//if (node.amount <= 0) return;
@@ -904,7 +902,7 @@ BubbleTree.Line = function(bc, attr, origin, angle, fromRad, toRad) {
 	
 	this.init = function() {
 		this.getXY();
-		console.log("foo", "M"+this.x1+" "+this.y1+"L"+this.x2+" "+this.y2, attr);
+		//console.log("foo", "M"+this.x1+" "+this.y1+"L"+this.x2+" "+this.y2, attr);
 		this.path = this.bc.paper.path(
 			"M"+this.x1+" "+this.y1+"L"+this.x2+" "+this.y2
 		).attr(this.attr);
@@ -941,7 +939,7 @@ BubbleTree.Loader = function(config) {
 	 */
 	me.loadData = function() {
 		var me = this, url = me.config.data;
-		console.log('loading url ',url);
+		//console.log('loading url ',url);
 		$.ajax({
 			url: url,
 			context: me,
