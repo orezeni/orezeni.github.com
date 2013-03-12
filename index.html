@@ -28,13 +28,13 @@ yepnope({
 
        var db = new OpenSpending.DailyBread($('#dailybread'));
        new OpenSpending.Aggregator({
-           //apiUrl: 'http://openspending.org/api',
-           localApiCache: 'aggregate.json',
-           dataset: 'ukgov-finances-cra',
-           drilldowns: ['cofog1', 'cofog2'],
-           cuts: ['year:2008'],
+           apiUrl: 'http://openspending.org/api',
+           //localApiCache: 'aggregate.json',
+           dataset: 'yokohama_budget',
+           drilldowns: ['Category', 'SubCategory'],
+           cuts: ['year:2012'],
            rootNodeLabel: 'Total',
-           breakdown: 'region',
+           breakdown: 'Category',
            callback: function(data) {
 
             $('#content-wrap').show();

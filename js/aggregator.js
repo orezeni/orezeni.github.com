@@ -45,7 +45,7 @@ var OpenSpending = OpenSpending || {};
     if (!self.config.measure) {
       self.config.measure = 'amount';
     }
-    
+
     self.queryData = function () {
         var data = {}, config = self.config;
 
@@ -93,7 +93,7 @@ var OpenSpending = OpenSpending || {};
        * @param {object} testDataPath (optional) An object with json (not jsonp)
        * test data. For testing only.
        **/
-    
+
     self.getTree = function () {
         var data = self.queryData();
         var key = window.btoa($.param(data)).replace(/\=/g, '');
@@ -267,7 +267,7 @@ var OpenSpending = OpenSpending || {};
           node.label = 'Others';
           node.name = 'others';
         } else if (type === 'object') {
-          value.id = value._id;
+          //value.id = value._id;
           if (value.id === undefined) {
             node.id = 'others';
             node.label = 'Others';
@@ -303,7 +303,7 @@ var OpenSpending = OpenSpending || {};
         node[self.config.measure] = 0.0;
         return node;
       };
-    
+
     self.getTree();
   };
 
