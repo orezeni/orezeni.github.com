@@ -29,17 +29,17 @@ BubbleTree.Styles.Cofog2 = {
   '3-1': { icon: 'icons/dollar.svg'},
   '3-2': { icon: 'icons/harbor.svg'},
   '3-3': { icon: 'icons/culture.svg'},
-  '4-1': { icon: 'icons/farms.svg', color: '#C75746' },
-  '4-2': { icon: 'icons/street-lights.svg', color: '#C75746' },
-  '4-3': { icon: 'icons/housing.svg', color: '#C75746' },
-  '5-1': { icon: 'icons/tree.svg', color: '#C75746' },
-  '5-2': { icon: 'icons/wind.svg', color: '#C75746' },
-  '6-1': { icon: 'icons/civilian-action.svg', color: '#C75746' },
-  '7-1': { icon: 'icons/traffic-watersup.svg', color: '#C75746' },
-  '8-1': { icon: 'icons/publicaffairs.svg', color: '#C75746' },
-  '8-2': { icon: 'icons/government.svg', color: '#C75746' },
-  '9-1': { icon: 'icons/garbage.svg', color: '#C75746' },
-  '10-1': { icon: 'icons/order-safety.svg', color: '#C75746' }
+  '4-1': { icon: 'icons/farms.svg'},
+  '4-2': { icon: 'icons/street-lights.svg' },
+  '4-3': { icon: 'icons/housing.svg' },
+  '5-1': { icon: 'icons/tree.svg' },
+  '5-2': { icon: 'icons/wind.svg' },
+  '6-1': { icon: 'icons/civilian-action.svg' },
+  '7-1': { icon: 'icons/traffic-watersup.svg' },
+  '8-1': { icon: 'icons/publicaffairs.svg' },
+  '8-2': { icon: 'icons/government.svg' },
+  '9-1': { icon: 'icons/garbage.svg' },
+  '10-1': { icon: 'icons/order-safety.svg' }
 };
 
 BubbleTree.Styles.Cofog3 = {

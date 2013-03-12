@@ -176,7 +176,7 @@ var BubbleTree = function(config, onHover, onUnHover) {
       }
       var nodeStyle = style[node.name];
       if (nodeStyle) {
-        node.color = nodeStyle.color;
+        node.color = nodeStyle.bcolor ? nodeStyle.bcolor : nodeStyle.color;
         node.icon = nodeStyle.icon;
         node.label = BubbleTree.LABEL_MAPPING[node.label] || node.label;
       }
@@ -184,7 +184,7 @@ var BubbleTree = function(config, onHover, onUnHover) {
 
     if (!node.color) {
       // use color from parent node if no other match available
-      if (node.level > 0) node.color = node.parent.color;
+      if (node.level > 0) node.color = node.parent.bcolor ? node.parent.bcolor : node.parent.color;
       else node.color = '#999999';
     }
     // lighten up the color if there are no children
