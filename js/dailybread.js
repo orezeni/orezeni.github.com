@@ -1,31 +1,5 @@
 OpenSpending = "OpenSpending" in window ? OpenSpending : {};
 
-OpenSpending.LABEL_MAPPING = {
-  "helping-others":"健康福祉",
-  "pre-school":"こども青少年",
-  "education":"教育",
-  "civilian-action":"市民",
-  "order-safety":"消防",
-  "wind":"温暖化対策",
-  "tree":"環境創造",
-  "garbage":"資源循環",
-  "housing":"建築",
-  "street-lights":"都市整備",
-  "farms":"道路",
-  "culture":"文化観光",
-  "dollar":"経済",
-  "harbor":"港湾",
-  "publicaffairs":"総務",
-  "government":"政策",
-  "traffic-watersup":"交通・水道",
-
-  "schools":"子育て・教育",
-  "economy-tourism":"経済・観光",
-  "our-streets":"街づくり",
-  "environment":"環境",
-  "traffic-watersup":"交通・水道"
-};
-
 (function ($) {
 
 var dependentType = 'single'; // 世帯タイプ初期値
@@ -104,7 +78,7 @@ OpenSpending.DailyBread = function (elem) {
       .addClass('active')
 
     self.drawTier(tierId + 1)
-	
+
     // Hide old tiers
     self.$e.find('.db-tier').each(function () {
       if ($(this).attr('data-db-tier') > tierId + 1) {
@@ -122,17 +96,11 @@ OpenSpending.DailyBread = function (elem) {
       return _.map(
         _.filter(node.children, function(child) {
           return _.indexOf(skip, child.name);
-        }), 
+        }),
         function(child) {
           var daily = (child.amount / node.amount);
           if (absolute) daily = daily / 365.0;
-          var newLabel = OpenSpending.LABEL_MAPPING[child.label];
-          if (newLabel == undefined && child.label) {
-            // NOP
-          } else {
-            child.label = newLabel;
-          }
-          return [child.name, child.label, daily, handleChildren(child, false)]; 
+          return [child.name, child.label, daily, handleChildren(child, false)];
         });
     }
     self.setData(handleChildren(data, true));
@@ -168,7 +136,7 @@ OpenSpending.DailyBread = function (elem) {
     var t = self.tiers[tierId] = self.tiers[tierId] || $("<div class='db-tier' data-db-tier='" + tierId + "'></div>").appendTo(self.$e)
     var n = data.length
     var w = 100.0 / n
-  
+
     var icons = _.map(data, function(d) { return self.iconLookup(d[0]); });
 
     if (!self.sliderUpdate) {
@@ -189,7 +157,7 @@ OpenSpending.DailyBread = function (elem) {
                 "</div>"
 
       t.html(_.template(tpl, { activeArea: self.areas[tierId], areas: data, width: w, icons: icons }))
-      
+
       self.drawIcons(t);
     }
 
@@ -218,11 +186,11 @@ OpenSpending.DailyBread = function (elem) {
     }
     return [tax, data]
   }
-  
+
   this.drawIcons = function(t) {
     var iconRad = 35;
     $('.db-area-icon svg', t).remove();
-    $('.db-area-icon', t).each(function(i,e) { 
+    $('.db-area-icon', t).each(function(i,e) {
       var iconUrl, paper;
       iconUrl = $(e).data('svg-url');
       paper = Raphael(e, iconRad+iconRad,iconRad+iconRad+5);
