@@ -6,7 +6,7 @@ title: Country Regional Analysis
 <div class="row">
   <script type="text/javascript">
   yepnope.errorTimeout = 1000;
-  yepnope({ 
+  yepnope({
   load: [
     '/js/libs/jquery.qtip.min.js',
     '/js/libs/jquery.history.js',
@@ -18,54 +18,55 @@ title: Country Regional Analysis
     '/css/bubbletree.css',
     '/css/cra-map.css',
     '/js/aggregator.js',
-    '/js/bubbletree.cofog.js'
+    '/js/bubbletree.cofog.js',
+    '/js/cofog.js'
   ],
   complete: function() {
 
-		$(function() {
-			var $tooltip = $('<div class="tooltip">Tooltip</div>');
-			$('.bubbletree').append($tooltip);
-			$tooltip.hide();
-			
-			var dataLoaded = function(data) {
-				window.bubbleTree = new BubbleTree({
-					data: data,
-					container: '#bubbletree',
-					bubbleType: 'icon',
-					bubbleStyles: {
-							'cofog-1':  BubbleTree.Styles.Cofog1,
-							'cofog-2':  BubbleTree.Styles.Cofog2,
-							'cofog-3':  BubbleTree.Styles.Cofog3
-					},
-					clearColors: true, // remove all colors coming from OpenSpending API
-					rootPath: '/',
-						tooltip: {
-							qtip: true,
-							delay: 800,
-							content: function(node) {
-								return [node.label, '<div class="desc">'+(node.description ? node.description : 'No description given')+'</div><div class="amount">\u00A5 '+node.famount+'</div>'];
-							}
-						}
-				});
-			};
-			
-			// call openspending api for data
-			new OpenSpending.Aggregator({
-				//apiUrl: 'http://openspending.org/api',
+    $(function() {
+      var $tooltip = $('<div class="tooltip">Tooltip</div>');
+      $('.bubbletree').append($tooltip);
+      $tooltip.hide();
+
+      var dataLoaded = function(data) {
+        window.bubbleTree = new BubbleTree({
+          data: data,
+          container: '#bubbletree',
+          bubbleType: 'icon',
+          bubbleStyles: {
+              'cofog-1':  OpenSpending.Styles.Cofog,
+              'cofog-2':  BubbleTree.Styles.Cofog2,
+              'cofog-3':  BubbleTree.Styles.Cofog3
+          },
+          clearColors: true, // remove all colors coming from OpenSpending API
+          rootPath: '/',
+            tooltip: {
+              qtip: true,
+              delay: 800,
+              content: function(node) {
+                return [node.label, '<div class="desc">'+(node.description ? node.description : 'No description given')+'</div><div class="amount">\u00A5 '+node.famount+'</div>'];
+              }
+            }
+        });
+      };
+
+      // call openspending api for data
+      new OpenSpending.Aggregator({
+        apiUrl: 'http://openspending.org/api',
         //Use static file instead of api
-				localApiCache: 'aggregate.json',
-				dataset: 'ukgov-finances-cra',
-				rootNodeLabel: 'Total',
-				drilldowns: ['cofog1', 'cofog2'],
-				cuts: ['year:2008'],
-				breakdown: 'region',
-				callback: dataLoaded
-			});
-		});
+        //localApiCache: 'aggregate.json',
+        dataset: 'yokohama_budget',
+        rootNodeLabel: 'Total',
+        drilldowns: ['Category', 'SubCategory'],
+        cuts: ['year:2012'],
+        breakdown: 'SubCategory',
+        callback: dataLoaded
+      });
+    });
   }
   });
-			
-	</script>
+
+  </script>
 
   <div class="bubbletree-wrapper">
     <div id="bubbletree" class="bubbletree"></div>
