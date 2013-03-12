@@ -178,7 +178,7 @@ var BubbleTree = function(config, onHover, onUnHover) {
       if (nodeStyle) {
         node.color = nodeStyle.bcolor ? nodeStyle.bcolor : nodeStyle.color;
         node.icon = nodeStyle.icon;
-        node.label = BubbleTree.LABEL_MAPPING[node.label] || node.label;
+        node.label = node.label;
       }
     }
 
@@ -2135,29 +2135,3 @@ BubbleTree.Bubbles.Icon = function(node, bubblechart, origin, radius, angle, col
   me.init();
 };
 
-
-BubbleTree.LABEL_MAPPING = {
-  "helping-others":"健康福祉",
-  "pre-school":"こども青少年",
-  "education":"教育",
-  "civilian-action":"市民",
-  "order-safety":"消防",
-  "wind":"温暖化対策",
-  "tree":"環境創造",
-  "garbage":"資源循環",
-  "housing":"建築",
-  "street-lights":"都市整備",
-  "farms":"道路",
-  "culture":"文化観光",
-  "dollar":"経済",
-  "harbor":"港湾",
-  "publicaffairs":"総務",
-  "government":"政策",
-  "traffic-watersup":"交通・水道",
-
-  "schools":"子育て・教育",
-  "economy-tourism":"経済・観光",
-  "our-streets":"街づくり",
-  "environment":"環境",
-  "traffic-watersup":"交通・水道"
-};
