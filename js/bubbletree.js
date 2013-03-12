@@ -167,12 +167,12 @@ var BubbleTree = function(config, onHover, onUnHover) {
     if (node.level > 0) {
       var style;
       if (node.level == 1) {
-        style = styles['cofog-1'];
+        style = styles['cofog'];
       } else
       if (node.level == 2) {
-        style = styles['cofog-2'];
+        style = styles['cofog'];
       } else {
-        style = styles['cofog-3'];
+        style = styles['cofog'];
       }
       var nodeStyle = style[node.name];
       if (nodeStyle) {
