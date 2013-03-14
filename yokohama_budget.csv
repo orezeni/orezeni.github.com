@@ -1,4 +1,4 @@
-UniqueKey,Year,Category ID,Category,SubCategory ID,SubCategory,ProjectID,Project,Amount
+UniqueKey,year,category_id,category,subcategory_id,subcategory,project_id,project,amount
 2012-1,2012,1,健康福祉,1.1,健康福祉,project-1,国民健康保険事業,359535000
 2012-2,2012,1,健康福祉,1.1,健康福祉,project-2,介護保険事業,213391000
 2012-3,2012,1,健康福祉,1.1,健康福祉,project-3,生活保護費,124303000
