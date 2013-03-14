@@ -30,9 +30,9 @@ yepnope({
        new OpenSpending.Aggregator({
            apiUrl: 'http://openspending.org/api',
            //localApiCache: 'aggregate.json',
-           dataset: 'yokohama_budget',
+           dataset: OpenSpending.identifier,
            drilldowns: ['Category', 'Subcategory'],
-           cuts: ['year:2012'],
+           cuts: ['year:' + OpenSpending.year],
            rootNodeLabel: 'Total',
            breakdown: 'Category',
            callback: function(data) {

@@ -52,10 +52,10 @@ title: 使途別予算額
         apiUrl: 'http://openspending.org/api',
         //Use static file instead of api
         //localApiCache: 'aggregate.json',
-        dataset: 'yokohama_budget',
+        dataset: OpenSpending.identifier,
         rootNodeLabel: 'Total',
         drilldowns: ['Category', 'Subcategory'],
-        cuts: ['year:2012'],
+        cuts: ['year:' + OpenSpending.year],
         breakdown: 'Subcategory',
         callback: dataLoaded
       });

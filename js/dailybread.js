@@ -3,9 +3,9 @@ OpenSpending = "OpenSpending" in window ? OpenSpending : {};
 (function ($) {
 
 var dependentType = 'single'; // 世帯タイプ初期値
-var baseKoujo = 330000; // 住民税基礎控除
-var huyoKoujo = 330000; // 一人分の扶養控除
-var taxRate = 0.06; // 住民税率
+var baseKoujo = Taxes.baseKoujo; // 住民税基礎控除
+var huyoKoujo = Taxes.huyoKoujo; // 一人分の扶養控除
+var taxRate = Taxes.taxRate; // 住民税率
 
 var formatCurrency = function (val, prec, sym, dec, sep) {
   prec = prec === undefined ? 2 : prec
