@@ -49,9 +49,8 @@ OpenSpending.Styles.Cofog = {
   /* machida cofog */
   '1': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#935B3B' },
   '1-1': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#935B3B' },
-  '2': { icon: 'icons/machi.svg', color: '#C75746', bcolor: '#0AB971' },
+  '2': { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#0AB971' },
   '2-1': { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#0AB971' },
-  '2-2': { icon: 'icons/education.svg', color: '#C75746', bcolor: '#0AB971' },
   '3': { icon: 'icons/c_kenkou_fukushi.svg', color: '#C75746', bcolor: '#4E6D00' },
   '3-1': { icon: 'icons/helping-others.svg', color: '#C75746', bcolor: '#4E6D00' },
   '3-2': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#4E6D00' },
