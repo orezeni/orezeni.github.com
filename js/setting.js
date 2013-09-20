@@ -57,20 +57,19 @@ OpenSpending.Styles.Cofog = {
   '3-2': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#4E6D00' },
   '4': { icon: 'icons/labour.svg', color: '#C75746', bcolor: '#D33673' },
   '4-1': { icon: 'icons/labour.svg', color: '#C75746', bcolor: '#D33673' },
-  '5': { icon: 'icons/environment.svg', color: '#C75746', bcolor: '#2A3A03' },
-  '5-1': { icon: 'icons/tree.svg', color: '#C75746', bcolor: '#2A3A03'  },
-  '5-2': { icon: 'icons/wind.svg', color: '#C75746', bcolor: '#2A3A03'  },
-  '6': { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#EC2406' },
-  '6-1': { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#EC2406' },
-  '7': { icon: 'icons/traffic-watersup.svg', color: '#C75746', bcolor: '#938626' },
-  '7-1': { icon: 'icons/traffic-watersup.svg', color: '#C75746', bcolor: '#938626' },
-  '8': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#C75746' },
-  '8-1': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#C75746' },
-  '8-2': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#C75746' },
-  '9': { icon: 'icons/garbage.svg', color: '#C75746', bcolor: '#D33673' },
-  '9-1': { icon: 'icons/garbage.svg', color: '#C75746', bcolor: '#D33673' },
-  '10': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' },
-  '10-1': { icon: 'icons/order-safety.svg', color: '#C75746', bcolor: '#790586' }
+  '5': { icon: 'icons/japanese-money.svg', color: '#C75746', bcolor: '#2A3A03' },
+  '5-1': { icon: 'icons/c_nougyou.svg', color: '#C75746', bcolor: '#2A3A03'  },
+  '5-2': { icon: 'icons/c_syoukougyou.svg', color: '#C75746', bcolor: '#2A3A03'  },
+  '6': { icon: 'icons/construction.svg', color: '#C75746', bcolor: '#EC2406' },
+  '6-1': { icon: 'icons/construction.svg', color: '#C75746', bcolor: '#EC2406' },
+  '7': { icon: 'icons/c_shyoubou.svg', color: '#C75746', bcolor: '#938626' },
+  '7-1': { icon: 'icons/c_shyoubou.svg', color: '#C75746', bcolor: '#938626' },
+  '8': { icon: 'icons/education.svg', color: '#C75746', bcolor: '#C75746' },
+  '8-1': { icon: 'icons/education.svg', color: '#C75746', bcolor: '#C75746' },
+  '9': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#D33673' },
+  '9-1': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#D33673' },
+  '10': { icon: 'icons/c_syoubou_bousai.svg', color: '#C75746', bcolor: '#790586' },
+  '10-1': { icon: 'icons/c_syoubou_bousai.svg', color: '#C75746', bcolor: '#790586' }
 };
 
 
