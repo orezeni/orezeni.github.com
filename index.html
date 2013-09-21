@@ -31,10 +31,10 @@ yepnope({
            apiUrl: 'http://openspending.org/api',
            //localApiCache: 'aggregate.json',
            dataset: OpenSpending.identifier,
-           drilldowns: ['Category', 'Subcategory'],
+           drilldowns: ['category', 'subcategory'],
            cuts: ['year:' + OpenSpending.year],
            rootNodeLabel: 'Total',
-           breakdown: 'Subcategory',
+           breakdown: 'subcategory',
            callback: function(data) {
 
             $('#content-wrap').show();
@@ -89,11 +89,11 @@ yepnope({
      </div>
 
      <div id="db-tax" class="layout-col layout-col-3">
-      <h2>あなたの横浜市税（年間）</h2>
+      <h2>あなたの町田市税（年間）</h2>
       <p>&yen;31.12</p>
      </div>
     </div><!-- /#db-topbar -->
   </div>
-  あなたの市税は、1日当たり、どこで、いくら使われているか？
+  あなたの市税は、1日当たり、どこで、いくら使われているか？ クリックすると明細が表示されます。
 </div><!-- /#dailybread -->
 
