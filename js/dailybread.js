@@ -268,8 +268,8 @@ OpenSpending.renderDependentTypes = function(db) {
     }
   }
 
-  draw('/icons/family.svg', $('#select-dependents-type .family')[0], false);
-  draw('/icons/post-secondary.svg', $('#select-dependents-type .single')[0], true);
+  draw('icons/family.svg', $('#select-dependents-type .family')[0], false);
+  draw('icons/post-secondary.svg', $('#select-dependents-type .single')[0], true);
 }
 
 })(jQuery)
