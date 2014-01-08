@@ -2,8 +2,15 @@ safe: true
 source: .
 destination: ./_site
 lsi: false
-pygments: true
+#pygments: true
 
-auto: true
-title: 税金はどこへ行った？
+#auto: true
+title: NAME版 税金はどこへ行った？
 
+code: CODE
+name: NAME
+aname: ANAME
+year: YEAR
+
+exclude: ['vendor', 'Gemfile', 'Gemfile.lock', 'README.md', 'README.rst', 'Rakefil
+e']
