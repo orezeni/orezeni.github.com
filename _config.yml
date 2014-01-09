@@ -12,5 +12,5 @@ name: NAME
 unit: UNIT
 year: YEAR
 
-exclude: ['vendor', 'Gemfile', 'Gemfile.lock', 'README.md', 'README.rst', 'Rakefil
+exclude: ['Gemfile*', 'README*', 'Rakefile', 'vendor']
 e']
