@@ -13,4 +13,3 @@ unit: UNIT
 year: YEAR
 
 exclude: ['Gemfile*', 'README*', 'Rakefile', 'vendor']
-e']
