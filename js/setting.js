@@ -1,3 +1,5 @@
+---
+---
 /*
  * Icons for COFOG taxonomy
  *
