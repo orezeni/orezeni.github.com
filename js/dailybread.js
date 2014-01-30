@@ -1,5 +1,6 @@
 OpenSpending = "OpenSpending" in window ? OpenSpending : {};
 
+
 (function ($) {
 
 var dependentType = 'single'; // 世帯タイプ初期値
