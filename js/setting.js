@@ -26,6 +26,7 @@ OpenSpending.Styles.Cofog = {
 
   // 総務費
   '02': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#0AB971' },
+  '0200': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#0AB971' },
   '0201': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' },
   '0202': { icon: 'icons/dollar.svg', color: '#C75746', bcolor: '#0AB971' },
   '0203': { icon: 'icons/books.svg', color: '#C75746', bcolor: '#0AB971' },
@@ -35,6 +36,7 @@ OpenSpending.Styles.Cofog = {
 
   // 民生費
   '03': { icon: 'icons/family2.svg', color: '#C75746', bcolor: '#4E6D00' },
+  '0300': { icon: 'icons/family2.svg', color: '#C75746', bcolor: '#4E6D00' },
   '0301': { icon: 'icons/helping-others.svg', color: '#C75746', bcolor: '#4E6D00' },
   '0302': { icon: 'icons/old-age.svg', color: '#C75746', bcolor: '#4E6D00' },
   '0303': { icon: 'icons/family.svg', color: '#C75746', bcolor: '#4E6D00' },
@@ -43,6 +45,7 @@ OpenSpending.Styles.Cofog = {
 
   // 衛生費
   '04': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },
+  '0400': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },
   '0401': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },
   '0402': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },
   '0403': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },
@@ -50,11 +53,13 @@ OpenSpending.Styles.Cofog = {
 
   // 労働費
   '05': { icon: 'icons/labour.svg', color: '#C75746', bcolor: '#2A3A03' },
+  '0500': { icon: 'icons/labour.svg', color: '#C75746', bcolor: '#2A3A03' },
   '0501': { icon: 'icons/unemployment.svg', color: '#C75746', bcolor: '#2A3A03'  },
   '0502': { icon: 'icons/unemployment.svg', color: '#C75746', bcolor: '#2A3A03'  },
 
   // 農林水産業費
   '06': { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#EC2406' },
+  '0600': { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#EC2406' },
   '0601': { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#EC2406' },
   '0602': { icon: 'icons/pig.svg', color: '#C75746', bcolor: '#EC2406' },
   '0603': { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#EC2406' },
@@ -67,6 +72,7 @@ OpenSpending.Styles.Cofog = {
 
   // 土木費
   '08': { icon: 'icons/construction.svg', color: '#C75746', bcolor: '#C75746' },
+  '0800': { icon: 'icons/construction.svg', color: '#C75746', bcolor: '#C75746' },
   '0801': { icon: 'icons/construction.svg', color: '#C75746', bcolor: '#C75746' },
   '0802': { icon: 'icons/manufactoring-construction.svg', color: '#C75746', bcolor: '#C75746' },
   '0803': { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#C75746' },
@@ -81,6 +87,7 @@ OpenSpending.Styles.Cofog = {
 
   // 教育費
   '10': { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' },
+  '1000': { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' },
   '1001': { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#790586' },
   '1002': { icon: 'icons/primary.svg', color: '#C75746', bcolor: '#790586' },
   '1003': { icon: 'icons/secondary-lower.svg', color: '#C75746', bcolor: '#790586' },
@@ -93,6 +100,7 @@ OpenSpending.Styles.Cofog = {
 
   // 災害復旧費
   '11': { icon: 'icons/aid-developing-countries.svg', color: '#C75746', bcolor: '#935B3B' },
+  '1100': { icon: 'icons/aid-developing-countries.svg', color: '#C75746', bcolor: '#935B3B' },
   '1101': { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#935B3B' },
   '1102': { icon: 'icons/construction.svg', color: '#C75746', bcolor: '#935B3B' },
   '1103': { icon: 'icons/legislative.svg', color: '#C75746', bcolor: '#935B3B' },
@@ -103,6 +111,7 @@ OpenSpending.Styles.Cofog = {
 
   // 諸支出金
   '13': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#4E6D00' },
+  '1300': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#4E6D00' },
   '1301': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
   '1302': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
   '1303': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
