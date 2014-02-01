@@ -7,6 +7,7 @@ var Taxes = Taxes || {};
 Taxes.baseKoujo = 330000; // 住民税基礎控除
 Taxes.huyoKoujo = 330000; // 一人分の扶養控除
 Taxes.taxRate = 0.06; // 住民税率
+Taxes.capitaBasis = 3000; //均等割 平成25年度
 
 var OpenSpending = OpenSpending || {};
 
@@ -20,7 +21,7 @@ OpenSpending.Styles.Cofog = {
   /* yokohama cofog */
   '1': { icon: 'icons/government-uk.svg', color: '#C75746', bcolor: '#935B3B' },
   '101': { icon: 'icons/government-uk.svg', color: '#C75746', bcolor: '#935B3B' },
-  '2': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#935B3B' },
+  '2': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#0AB971' },
   '102': { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#0AB971' },
   '103': { icon: 'icons/money.svg', color: '#C75746', bcolor: '#0AB971' },
   '104': { icon: 'icons/research.svg', color: '#C75746', bcolor: '#0AB971' },
