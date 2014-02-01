@@ -5,11 +5,12 @@ lsi: false
 #pygments: true
 
 #auto: true
-title: NAME版 税金はどこへ行った？
-
-code: CODE
+lname: LNAME
+title: LNAME版 税金はどこへ行った？
 name: NAME
 unit: UNIT
+code: CODE
 year: YEAR
+jyear: JYEAR
 
 exclude: ['Gemfile*', 'README*', 'Rakefile', 'vendor']
