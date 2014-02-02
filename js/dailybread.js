@@ -113,8 +113,27 @@ OpenSpending.DailyBread = function (elem) {
   }
 
   this.setSalary = function (salary) {
+    var temp = salary
+    if (1000000 <= temp  && temp < 1620000) {
+	temp = temp - 650000;
+    } else if (temp == 1620000){
+	temp = 970000;
+    } else if (1630000 <= temp && temp < 1800000) {
+	temp = temp / 4 * 4 *0.6; 
+    } else if (1800000 <= temp && temp < 3600000){
+	temp = temp / 4 * 4 * 0.7 - 180000;
+    } else if (3600000 <= temp && temp < 6600000) {
+	temp = temp / 4 * 4 * 0.8 - 540000;
+    } else if (6600000 <= temp && temp < 10000000) {
+	temp = temp * 0.9 - 1200000;
+    } else if (10000000 <= temp && temp < 15000000) {
+	temp = temp * 0.95 - 1700000;
+    } else if (15000000 <= temp) {
+	temp = temp - 2450000;
+    }
+
     self.salaryVal = salary
-    self.taxVal = (salary - (baseKoujo + (dependentType == 'family' ? huyoKoujo : 0))) * taxRate + capitaBasis;
+    self.taxVal = (temp - (baseKoujo + (dependentType == 'family' ? huyoKoujo : 0))) * taxRate + capitaBasis;
   }
 
   this.draw = function () {
