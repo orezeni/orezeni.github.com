@@ -1,0 +1,16 @@
+safe: true
+source: .
+destination: ../pref-gifu.gh-pages
+lsi: false
+#pygments: true
+
+#auto: true
+lname: 岐阜県
+title: 岐阜県版 税金はどこへ行った？
+name: 岐阜県
+unit: 県
+code: 21
+year: 2012
+jyear: 24
+
+exclude: ['Gemfile*', 'README*', 'Rakefile', 'vendor']
