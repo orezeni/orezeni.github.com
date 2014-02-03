@@ -179,7 +179,7 @@ var BubbleTree = function(config, onHover, onUnHover) {
         node.color = nodeStyle.bcolor ? nodeStyle.bcolor : nodeStyle.color;
         node.icon = nodeStyle.icon;
         node.label = node.label;
-      }
+	}
     }
 
     if (!node.color) {
