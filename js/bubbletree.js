@@ -179,8 +179,7 @@ var BubbleTree = function(config, onHover, onUnHover) {
         node.color = nodeStyle.bcolor ? nodeStyle.bcolor : nodeStyle.color;
         node.icon = nodeStyle.icon;
         node.label = node.label;
-        node.description=tooltipTitles[node.label];
-      }
+	}
     }
 
     if (!node.color) {
@@ -623,7 +622,7 @@ var BubbleTree = function(config, onHover, onUnHover) {
         }
       }
 
-      tr = new ns.Transitioner(/msie/.test(navigator.userAgent.toLowerCase()) || me.currentCenter == node ? 0 : 1000);
+      tr = new ns.Transitioner($.browser.msie || me.currentCenter == node ? 0 : 1000);
       tr.changeLayout(t);
       me.currentTransition = tr;
       if (!me.currentCenter && $.isFunction(me.config.firstNodeCallback)) {

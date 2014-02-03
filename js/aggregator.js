@@ -153,8 +153,7 @@ var OpenSpending = OpenSpending || {};
             currency: data.summary.currency[self.config.measure],
             children: [],
             level: 0,
-            breakdowns: {},
-            description:self.config.description
+            breakdowns: {}
           };
 
         root[self.config.measure] = 0.0;
@@ -182,11 +181,6 @@ var OpenSpending = OpenSpending || {};
 
       };
 
-      self.compareIDs=function(a,b){
-        if (a.order > b.order) return 1;
-        if (a.order == b.order) return 0;
-        return -1;
-      };
       self.processEntry = function (entry, nodes) {
         var parent = nodes.root,
           level = 0,
@@ -211,7 +205,6 @@ var OpenSpending = OpenSpending || {};
             node.breakdowns = {};
             node.currency = parent.currency;
             parent.children.push(node);
-            parent.children.sort(this.compareIDs);
             nodes[node.id] = node;
           }
 
@@ -306,8 +299,6 @@ var OpenSpending = OpenSpending || {};
         } else {
           throw 'unsupported type: ' + type;
         }
-        node.order=node.id-0;
-
         node.id = prefix + node.id;
         node[self.config.measure] = 0.0;
         return node;
