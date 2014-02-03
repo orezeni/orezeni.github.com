@@ -1,13 +1,21 @@
 OpenSpending = "OpenSpending" in window ? OpenSpending : {};
 
-
 (function ($) {
 
 var dependentType = 'single'; // 世帯タイプ初期値
 var baseKoujo = Taxes.baseKoujo; // 住民税基礎控除
 var huyoKoujo = Taxes.huyoKoujo; // 一人分の扶養控除
 var taxRate = Taxes.taxRate; // 住民税率
-var capitaBasis = Taxes.capitaBasis; //均等割
+var capitaBasis =Taxes.capitaBasis; //世帯均等割
+
+var graphSlope=[
+  [  0,  800000],
+  [ 30, 3500000],
+  [ 80, 5500000],
+  [100,20000000]
+]
+
+
 
 var formatCurrency = function (val, prec, sym, dec, sep) {
   prec = prec === undefined ? 2 : prec
@@ -44,22 +52,64 @@ OpenSpending.DailyBread = function (elem) {
     this.setSalary(4000000) // default starting salary
 
     this.$e.find('.wdmmg-slider').slider({
-      value: this.salaryVal,
-      min: 1000000,
-      max: 20000000,
-      step: 10000,
+      value: 50,
+      min: 0,
+      max: 100,
+      step: 0.25,
       animate: true,
       slide: function () { self.sliderUpdated.apply(self, arguments) }
     })
 
     this.$e.delegate('.db-area-col', 'click', this.handleClick)
+    this.$e.delegate('.db-area-col', 'mouseenter', this.handleMouseEnter)
+    this.$e.delegate('.db-area-col', 'mouseout', this.handleMouseOut)
   }
 
   this.sliderUpdated = function (evt, sld) {
-    self.setSalary(sld.value)
+    for (var i = 1; i < graphSlope.length; i++) {
+        if (sld.value==100 ||
+          graphSlope[i-1][0]<=sld.value && sld.value<graphSlope[i][0]){
+          self.setSalary(
+            graphSlope[i-1][1]+(graphSlope[i][1]-graphSlope[i-1][1])*
+            (
+              (sld.value-graphSlope[i-1][0])/(graphSlope[i][0]-graphSlope[i-1][0])
+            )
+            );
+        }
+    }
     self.sliderUpdate = true
     self.draw()
     self.sliderUpdate = false
+  }
+
+  this.handleMouseEnter = function() {
+    var tier = $(this).closest('.db-tier')
+    var areaId = parseInt($(this).attr('data-db-area'), 10)
+
+    var data_db_area_elem = tier.find('[data-db-area='+areaId+']')[0]
+    var data_db_area_text = data_db_area_elem.innerText || data_db_area_elem.textContent
+    var name = data_db_area_text.replace(/\s+/g, '') // delete spaces
+    var title = tooltipTitles[name]
+    var tooltip_attribute = 'jq-ui-tooltip' // attribute name for tooltip
+    $(tier.find('[data-db-area='+areaId+']')[1])
+        .attr(tooltip_attribute, title)
+        .tooltip({
+            items: '[' + tooltip_attribute + ']',
+            content: function() {
+                return $(this).attr(tooltip_attribute) },
+            track: true})
+  }
+
+  this.handleMouseOut = function() {
+    var tier = $(this).closest('.db-tier')
+    var areaId = parseInt($(this).attr('data-db-area'), 10)
+
+    var data_db_area_elem = tier.find('[data-db-area='+areaId+']')[0]
+    var data_db_area_text = data_db_area_elem.innerText || data_db_area_elem.textContent
+    var name = data_db_area_text.replace(/\s+/g, '') // delete spaces
+    var title = tooltipTitles[name]
+
+    $(tier.find('[data-db-area='+areaId+']')[1]).tooltip('close')
   }
 
   this.handleClick = function () {

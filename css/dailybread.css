@@ -90,6 +90,7 @@
   background: none;
   background-color: #830242;
   height: 6px;
+  cursor: pointer;
 }
 
 .wdmmg-slider.ui-slider-horizontal .ui-slider-handle {

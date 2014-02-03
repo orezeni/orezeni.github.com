@@ -181,7 +181,8 @@
 
     var self = $.extend({}, implementations.base);
 
-    if($.browser.msie && ($.browser.version < 8 || document.documentMode < 8)) {
+
+    if (/msie [1-8]./.test(navigator.userAgent.toLowerCase())) {
         self.type = 'iframeTimer';
     } else if("onhashchange" in window) {
         self.type = 'hashchangeEvent';
