@@ -33,6 +33,9 @@ OpenSpending.Styles.Cofog = {
   '0204': { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#0AB971' },
   '0205': { icon: 'icons/research.svg', color: '#C75746', bcolor: '#0AB971' },
   '0206': { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#0AB971' },
+  '0207': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#0AB971' },
+  '0208': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#0AB971' },
+  '0209': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#0AB971' },
 
   // 民生費
   '03': { icon: 'icons/family2.svg', color: '#C75746', bcolor: '#4E6D00' },
@@ -42,6 +45,7 @@ OpenSpending.Styles.Cofog = {
   '0303': { icon: 'icons/family.svg', color: '#C75746', bcolor: '#4E6D00' },
   '0304': { icon: 'icons/unemployment.svg', color: '#C75746', bcolor: '#4E6D00' },
   '0305': { icon: 'icons/ambulance.svg', color: '#C75746', bcolor: '#4E6D00' },
+  '0306': { icon: 'icons/family2.svg', color: '#C75746', bcolor: '#4E6D00' },
 
   // 衛生費
   '04': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },
@@ -50,12 +54,15 @@ OpenSpending.Styles.Cofog = {
   '0402': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },
   '0403': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },
   '0404': { icon: 'icons/garbage.svg', color: '#C75746', bcolor: '#D33673' },
+  '0405': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },
+  '0406': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },
 
   // 労働費
   '05': { icon: 'icons/labour.svg', color: '#C75746', bcolor: '#2A3A03' },
   '0500': { icon: 'icons/labour.svg', color: '#C75746', bcolor: '#2A3A03' },
   '0501': { icon: 'icons/unemployment.svg', color: '#C75746', bcolor: '#2A3A03'  },
   '0502': { icon: 'icons/unemployment.svg', color: '#C75746', bcolor: '#2A3A03'  },
+  '0503': { icon: 'icons/labour.svg', color: '#C75746', bcolor: '#2A3A03' },
 
   // 農林水産業費
   '06': { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#EC2406' },
@@ -69,21 +76,25 @@ OpenSpending.Styles.Cofog = {
   // 商工費
   '07': { icon: 'icons/economy-tourism.svg', color: '#C75746', bcolor: '#938626' },
   '0700': { icon: 'icons/economy-tourism.svg', color: '#C75746', bcolor: '#938626' },
+  '0701': { icon: 'icons/economy-tourism.svg', color: '#C75746', bcolor: '#938626' },
+  '0702': { icon: 'icons/economy-tourism.svg', color: '#C75746', bcolor: '#938626' },
 
   // 土木費
   '08': { icon: 'icons/construction.svg', color: '#C75746', bcolor: '#C75746' },
   '0800': { icon: 'icons/construction.svg', color: '#C75746', bcolor: '#C75746' },
   '0801': { icon: 'icons/construction.svg', color: '#C75746', bcolor: '#C75746' },
   '0802': { icon: 'icons/manufactoring-construction.svg', color: '#C75746', bcolor: '#C75746' },
-  '0803': { icon: 'icons/unknown.svg', color: '#C75746', bcolor: '#C75746' },
+  '0803': { icon: 'icons/construction.svg', color: '#C75746', bcolor: '#C75746' },
   '0804': { icon: 'icons/harbor.svg', color: '#C75746', bcolor: '#C75746' },
   '0805': { icon: 'icons/our-streets.svg', color: '#C75746', bcolor: '#C75746' },
   '0806': { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#C75746' },
   '0807': { icon: 'icons/airplane.svg', color: '#C75746', bcolor: '#C75746' },
 
-  // 消防費
-  '09': { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#D33673' },
-  '0900': { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#D33673' },
+  // 警察費
+  '09': { icon: 'icons/police2.svg', color: '#C75746', bcolor: '#D33673' },
+  '0900': { icon: 'icons/police2.svg', color: '#C75746', bcolor: '#D33673' },
+  '0901': { icon: 'icons/police2.svg', color: '#C75746', bcolor: '#D33673' },
+  '0902': { icon: 'icons/police2.svg', color: '#C75746', bcolor: '#D33673' },
 
   // 教育費
   '10': { icon: 'icons/education.svg', color: '#C75746', bcolor: '#790586' },
@@ -115,6 +126,13 @@ OpenSpending.Styles.Cofog = {
   '1301': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
   '1302': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
   '1303': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
+  '1304': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
+  '1305': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
+  '1306': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
+  '1307': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
+  '1308': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
+  '1309': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
+  '1310': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#4E6D00' },
 
   // 前年度繰上充用金
   '14': { icon: 'icons/money.svg', color: '#C75746', bcolor: '#D33673' },
