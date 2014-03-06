@@ -1,67 +1,34 @@
 ---
-title: Data Sources
 layout: default
+title: データの出所
 ---
 
 <h2 class="page-header">データの出所</h2>
-
 <div class="row">
   <div class="span8 offset4">
-  <p>このサイトは以下の３種類のデータを用いています。第１は、横浜市の一般会計当初予算の使いみち１０分類のデータ・ラベル。第２は、この１０分類を更に細分類した２０分類のデータ・ラベル。第３は、横浜市の２４年度一般会計予算の２０分類別の予算比率データです。</p>
-
-  <p>第１および第２のデータ・ラベルは、横浜市財政局財政課による「平成２４年度予算案について　資料編」９８頁の「市民一人あたり予算の使いみち（一般会計）」表中の分野名および局・統括本部名を用いています。</p>
-
-  <p>第３の予算比率データは、前出「平成２４年度予算案について」３６〜７２頁の「４　２４年度の主要事業一覧（１） ２４年度局の主要事業一覧」表中の局・統括本部の主要事業予算総額の比率を用いています。</p>
+    <p>{{ site.name }}版では、「<a href="http://www.pref.gifu.lg.jp/kensei-unei/zaisei-yosan/kessan-jokyo/kesan-nintei/index-H24.html">平成24年度岐阜県歳入歳出決算</a>」のデータを用いています。</p>
+    <p>上位のデータラベルには、歳入歳出の分類項目にある「款」に相当する14の分類を当て、その内訳にあたる「項」を、下位のデータラベルに当てています。</p>
   </div>
 </div>
 
-
-<h2 class="page-header">どのように、可視化に使っているデータの分類を決めているのか？ </h2>
-
+<h2 class="page-header">データの分類はどのように決めているのですか？</h2>
 <div class="row">
   <div class="span8 offset4">
-  横浜市財政局財政課が「平成２４年度予算案について　資料編」において用いている一般会計予算の使いみち10分類および局・統括本部２０分類を使っています。
-  </div>
-</div>
-<h2 class="page-header">いつの時点のデータを使っているのか？ </h2>
-
-<div class="row">
-  <div class="span8 offset4">
-  平成２４年度横浜市予算のデータを使っています。
+    <p>岐阜県「<a href="http://www.pref.gifu.lg.jp/kensei-unei/zaisei-yosan/kessan-jokyo/kesan-nintei/index-H24.html">平成24年度岐阜県歳入歳出決算</a>」に従った14分類を使っています。</p>
   </div>
 </div>
 
 <h2 class="page-header">このサイト上で税金額はどのように計算されているのですか？</h2>
-
 <div class="row">
   <div class="span8 offset4">
-自分の年間総収入を入力し、単身世帯かそれ以外かを選択すると、給与所得者であるという前提で、年間に支払う市税年総額と一日当たりに支払っている市税額が表示されます。一日当たりの市税額は10分野に分類されています。また、１０の各分野毎に支払われている市税額は、それぞれ、主要な事業予算を担当している市税額に細分類されています。<br/>所得控除額は、単身世帯の場合33万円、扶養一人世帯の場合66万円、市税負担額は課税対象額の6％と設定しています。また、10分野への税金の配分比率は、横浜市の一般会計全体における10分野への予算配分比率(24年1月1日現在)を使っています。
-</div>
-</div>
-
-<!--h2 class="page-header">If these are international categories, can I see spending classified this way for my country?</h2>
-
-<div class="row">
-  <div class="span8 offset4">
-The COFOG categories are international, so yes - it should be possible to compare spending across different countries that make their spending publicly available.
-
-If you know of data published in this way for your country, please email us at <a href="mailto:info@openspending.org">info@openspending.org</a>.
-  </div>
-</div-->
-
-<h2 class="page-header">どのようなデータを使っているのですか？</h2>
-
-<div class="row">
-  <div class="span8 offset4">
-  今回の<strong>Where Does My Money Go?</strong> β版は横浜市の平成24年度一般会計予算のうち、主要事業のみを対象としていますが、今後3000事業すべてを反映させる予定です。今後、各自治体や日本政府の一般会計、特別会計、公営企業会計へと対象を広げることも考えています。
-
+    <p>自分が収めた税額については、給与所得者であるという前提で、自分の年間総収入(スライドで設定)および世帯(単身世帯or扶養あり)を選択すると、{{ site.unit }}税年総額として算出されます。所得控除額は、単身世帯の場合33万円、扶養一人世帯の場合66万円、{{ site.unit }}税負担額は課税対象額の6％と設定しています。</p>
+    <p>上記によって算出された額を、仮の数字として14分野に振り分けています。{{ site.name }}版では、歳出決算に対して、歳入別の仕分けが反映されていないため、実際の{{ site.unit }}税の振り分けとは異なる数字になっております（例：ある公共工事にかかる支出が、実際は{{ site.unit }}税ではなく、国の税金から賄われている など）。予めご了承ください。本件については、今後の改善材料といたします。</p>
   </div>
 </div>
 
-<h2 class="page-header">私のデータの視覚化をお願いできますか？ </h2>
-
+<h2 class="page-header">今後、改訂や更新などはありますか？</h2>
 <div class="row">
   <div class="span8 offset4">
-  はい、できます。もし、キレイに視覚化したいデータをお持ちであれば、<a href="contact.html">コンタクトフォーム</a>からご連絡下さい。
+    <p>歳出をよりきめ細かく整理した形でのデータの載せ方や、県の主要事業を対象にした詳細データの掲載などを行っていく予定です。民間の有志の方々や当該自治体などとも連携を取りながら、今後よりよい形を目指してまいります。</p>
   </div>
 </div>
