@@ -107,11 +107,11 @@ body {
   min-width:1100px;
 }
 a {
-  color: #0088cc;
+  color: #1abc9c;
   text-decoration: none;
 }
 a:hover {
-  color: #005580;
+  color: #1abc9c;
   text-decoration: underline;
 }
 .row {
