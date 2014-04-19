@@ -18,7 +18,8 @@ OpenSpending.Styles = OpenSpending.Styles || {};
 OpenSpending.Styles.Cofog = {
 
   /* cofog */
-
+  '1': { icon: 'icons/helping-others.svg', color: '#000000', bcolor: '#000000' },
+  '1-1': { icon: 'icons/helping-others.svg', color: '#C75746', bcolor: '#935B3B' },
   '2': { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#0AB971' },
   '2-1': { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#0AB971' },
   '2-2': { icon: 'icons/education.svg', color: '#C75746', bcolor: '#0AB971' },
@@ -37,7 +38,7 @@ OpenSpending.Styles.Cofog = {
   '6-1': { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#EC2406' },
   '7': { icon: 'icons/traffic-watersup.svg', color: '#C75746', bcolor: '#938626' },
   '7-1': { icon: 'icons/traffic-watersup.svg', color: '#C75746', bcolor: '#938626' },
-  '1': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#C75746' },
+  '8': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#C75746' },
   '8-1': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#C75746' },
   '8-2': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#C75746' },
   '9': { icon: 'icons/garbage.svg', color: '#C75746', bcolor: '#D33673' },
