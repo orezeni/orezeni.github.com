@@ -32,7 +32,7 @@ yepnope({
            //localApiCache: 'aggregate.json',
            dataset: OpenSpending.identifier,
            drilldowns: ['Category', 'Subcategory'],
-           cuts: ['Year:' + OpenSpending.year],
+           cuts: ['year:' + OpenSpending.year],
            rootNodeLabel: 'Total',
            breakdown: 'Subcategory',
            callback: function(data) {
