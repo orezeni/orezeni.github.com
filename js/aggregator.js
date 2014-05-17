@@ -6,7 +6,7 @@ var OpenSpending = OpenSpending || {};
     siteUrl: location.protocol + location.host,
     dataset: 'cra',
     drilldowns: ['cofog1', 'cofog2'],
-    cuts: ['year:2008'],
+    cuts: ['year:2013'],
     breakdown: 'region',
     rootNodeLabel: 'Total',
     localApiCache: 'aggregate.json',
