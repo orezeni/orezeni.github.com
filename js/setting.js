@@ -15,9 +15,10 @@ OpenSpending.year = '2013';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
 
+  /* 
 OpenSpending.Styles.Cofog = {
 
-  /* cofog */
+cofog 
   '1': { icon: 'icons/helping-others.svg', color: '#ffffff', bcolor: '#935B3B' },
   '1-1': { icon: 'icons/helping-others.svg', color: '#ffffff', bcolor: '#935B3B' },
   '2': { icon: 'icons/schools.svg', color: '#ffffff', bcolor: '#0AB971' },
@@ -46,5 +47,5 @@ OpenSpending.Styles.Cofog = {
   '10': { icon: 'icons/order-safety.svg', color: '#ffffff', bcolor: '#790586' },
   '10-1': { icon: 'icons/order-safety.svg', color: '#ffffff', bcolor: '#790586' }
 };
-
+*/
 
