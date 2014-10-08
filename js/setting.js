@@ -11,7 +11,7 @@ Taxes.taxRate = 0.06; // 住民税率
 var OpenSpending = OpenSpending || {};
 
 OpenSpending.identifier = 'jinzai2012ikusei';
-OpenSpending.year = '2012';
+OpenSpending.year = '2014';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
 
