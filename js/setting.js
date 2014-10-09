@@ -10,7 +10,7 @@ Taxes.taxRate = 0.06; // 住民税率
 
 var OpenSpending = OpenSpending || {};
 
-OpenSpending.identifier = 'tsuyama-yosan2014';
+OpenSpending.identifier = 'Tsuyama-Yosan2014';
 OpenSpending.year = '2014';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
