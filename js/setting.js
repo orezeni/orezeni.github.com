@@ -17,7 +17,7 @@ OpenSpending.Styles = OpenSpending.Styles || {};
 
 OpenSpending.Styles.Cofog = {
 
-  /* yokohama cofog */
+  /* tsuyama cofog */
   '1': { icon: 'icons/courts.svg', color: '#C75746', bcolor: '#935B3B' },//議会費
   '11': { icon: 'icons/courts.svg', color: '#C75746', bcolor: '#935B3B' },
   '2': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' },//総務費
@@ -45,7 +45,7 @@ OpenSpending.Styles.Cofog = {
   '13': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#C75746' },//諸支出金
   '131': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#C75746' },
   '14': { icon: 'icons/money.svg', color: '#C75746', bcolor: '#C75746' },//予備費
-  '141': { icon: 'icons/money.svg', color: '#C75746', bcolor: '#C75746' },
+  '141': { icon: 'icons/money.svg', color: '#C75746', bcolor: '#C75746' }
 };
 
 
