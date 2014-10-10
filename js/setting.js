@@ -26,9 +26,9 @@ OpenSpending.Styles.Cofog = {
   '2' : { icon: 'icons/financial-admin.svg', color: '#C75746', bcolor: '#F8E716' }, //公債
   '21': { icon: 'icons/financial-admin.svg', color: '#C75746', bcolor: '#F8E716' },   //公債費
 
-  '3' : { icon: 'icons/our-streets.svg', color: '#C75746', bcolor: '#4E6D00' }, //街づくり
-  '31': { icon: 'icons/coal.svg', color: '#C75746', bcolor: '#4E6D00' },          //土木費
-  '32': { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#4E6D00' },       //災害復旧費
+  '3' : { icon: 'icons/our-streets.svg', color: '#C75746', bcolor: '#09C746' }, //街づくり
+  '31': { icon: 'icons/coal.svg', color: '#C75746', bcolor: '#09C746' },          //土木費
+  '32': { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#09C746' },       //災害復旧費
 
   '4' : { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#D33673' }, //教育
   '41': { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#D33673' },   //教育費
