@@ -48,5 +48,5 @@ OpenSpending.Styles.Cofog = {
 
   '9' : { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#D33673' }, //その他
   '91': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#D33673' },     //諸支出金
-  '92': { icon: 'icons/money.svg', color: '#C75746', bcolor: '#D33673' },           //予備費
+  '92': { icon: 'icons/money.svg', color: '#C75746', bcolor: '#D33673' }            //予備費
 };
