@@ -43,8 +43,8 @@ OpenSpending.Styles.Cofog = {
   '7' : { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#037626' }, //農林水産
   '71': { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#037626' },   //農林水産費
 
-  '8' : { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#C75746' }, //消防
-  '81': { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#C75746' },   //消防費
+  '8' : { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#F50223' }, //消防
+  '81': { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#F50223' },   //消防費
 
   '9' : { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#D33673' }, //その他
   '91': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#D33673' },     //諸支出金
