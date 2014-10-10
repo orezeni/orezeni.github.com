@@ -31,7 +31,7 @@ OpenSpending.Styles.Cofog = {
   '41': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },
 
   '5' : { icon: 'icons/misc-services.svg', color: '#C75746', bcolor: '#2A3A03' },//労働費
-  '51': { icon: 'icons/misc-services.svg', color: '#C75746', bcolor: '#2A3A03'  },
+  '51': { icon: 'icons/misc-services.svg', color: '#C75746', bcolor: '#2A3A03' },
 
   '6' : { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#EC2406' },//農林水産業費
   '61': { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#EC2406' },
