@@ -18,10 +18,10 @@ OpenSpending.Styles = OpenSpending.Styles || {};
 OpenSpending.Styles.Cofog = {
 
   /* tsuyama cofog */
-  '1' : { icon: 'icons/helping-others.svg', color: '#C75746', bcolor: '#0AB971' }, //健康福祉
-  '11': { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#0AB971' },  //民生費
-  '12': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#0AB971' },           //衛生費
-  '13': { icon: 'icons/misc-services.svg', color: '#C75746', bcolor: '#0AB971' },    //労働費
+  '1' : { icon: 'icons/helping-others.svg', color: '#C75746', bcolor: '#7AEBF7' }, //健康福祉
+  '11': { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#7AEBF7' },  //民生費
+  '12': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#7AEBF7' },           //衛生費
+  '13': { icon: 'icons/misc-services.svg', color: '#C75746', bcolor: '#7AEBF7' },    //労働費
 
   '2' : { icon: 'icons/financial-admin.svg', color: '#C75746', bcolor: '#F8E716' }, //公債
   '21': { icon: 'icons/financial-admin.svg', color: '#C75746', bcolor: '#F8E716' },   //公債費
