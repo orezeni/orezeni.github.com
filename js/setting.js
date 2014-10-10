@@ -10,7 +10,7 @@ Taxes.taxRate = 0.06; // 住民税率
 
 var OpenSpending = OpenSpending || {};
 
-OpenSpending.identifier = 'Tsuyama-Yosan2014';
+OpenSpending.identifier = 'Tsuyama-Budget';
 OpenSpending.year = '2014';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
@@ -18,45 +18,35 @@ OpenSpending.Styles = OpenSpending.Styles || {};
 OpenSpending.Styles.Cofog = {
 
   /* tsuyama cofog */
-  '1' : { icon: 'icons/courts.svg', color: '#C75746', bcolor: '#935B3B' },//議会費
-  '11': { icon: 'icons/courts.svg', color: '#C75746', bcolor: '#935B3B' },
+  '1' : { icon: 'icons/helping-others.svg', color: '#C75746', bcolor: '#935B3B' }, //健康福祉
+  '11': { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#935B3B' },  //民生費
+  '12': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#935B3B' },           //衛生費
+  '13': { icon: 'icons/misc-services.svg', color: '#C75746', bcolor: '#935B3B' },    //労働費
 
-  '2' : { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' },//総務費
-  '21': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' },
+  '2' : { icon: 'icons/financial-admin.svg', color: '#C75746', bcolor: '#0AB971' }, //公債
+  '21': { icon: 'icons/financial-admin.svg', color: '#C75746', bcolor: '#0AB971' },   //公債費
 
-  '3' : { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' },//民生費
-  '31': { icon: 'icons/civilian-action.svg', color: '#C75746', bcolor: '#4E6D00' },
+  '3' : { icon: 'icons/our-streets.svg', color: '#C75746', bcolor: '#4E6D00' }, //街づくり
+  '31': { icon: 'icons/coal.svg', color: '#C75746', bcolor: '#4E6D00' },          //土木費
+  '32': { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#4E6D00' },       //災害復旧費
 
-  '4' : { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },//衛生費
-  '41': { icon: 'icons/health.svg', color: '#C75746', bcolor: '#D33673' },
+  '4' : { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#D33673' }, //教育
+  '41': { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#D33673' },   //教育費
 
-  '5' : { icon: 'icons/misc-services.svg', color: '#C75746', bcolor: '#2A3A03' },//労働費
-  '51': { icon: 'icons/misc-services.svg', color: '#C75746', bcolor: '#2A3A03' },
+  '5' : { icon: 'icons/government.svg', color: '#C75746', bcolor: '#2A3A03' },    //政策
+  '51': { icon: 'icons/courts.svg', color: '#C75746', bcolor: '#2A3A03' },          //議会費
+  '52': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#2A3A03' },   //総務費
 
-  '6' : { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#EC2406' },//農林水産業費
-  '61': { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#EC2406' },
+  '6' : { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#EC2406' }, //商工
+  '61': { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#EC2406' },   //商工費
 
-  '7' : { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#938626' },//商工費
-  '71': { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#938626' },
+  '7' : { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#938626' }, //農林水産
+  '71': { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#938626' },   //農林水産費
 
-  '8' : { icon: 'icons/coal.svg', color: '#C75746', bcolor: '#C75746' },//土木費
-  '81': { icon: 'icons/coal.svg', color: '#C75746', bcolor: '#C75746' },
+  '8' : { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#C75746' }, //消防
+  '81': { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#C75746' },   //消防費
 
-  '9' : { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#D33673' },//消防費
-  '91': { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#D33673' },
-
-  '10' : { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#790586' },//教育費
-  '101': { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#790586' },
-
-  '11' : { icon: 'icons/our-streets.svg', color: '#C75746', bcolor: '#C75746' },//災害復旧費
-  '111': { icon: 'icons/our-streets.svg', color: '#C75746', bcolor: '#C75746' },
-
-  '12' : { icon: 'icons/financial-admin.svg', color: '#C75746', bcolor: '#C75746' },//公債費
-  '121': { icon: 'icons/financial-admin.svg', color: '#C75746', bcolor: '#C75746' },
-
-  '13' : { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#C75746' },//諸支出金
-  '131': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#C75746' },
-
-  '14' : { icon: 'icons/money.svg', color: '#C75746', bcolor: '#C75746' },//予備費
-  '141': { icon: 'icons/money.svg', color: '#C75746', bcolor: '#C75746' }
+  '9' : { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#D33673' }, //その他
+  '91': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#D33673' },     //諸支出金
+  '92': { icon: 'icons/money.svg', color: '#C75746', bcolor: '#D33673' },           //予備費
 };
