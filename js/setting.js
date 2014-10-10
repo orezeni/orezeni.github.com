@@ -30,18 +30,18 @@ OpenSpending.Styles.Cofog = {
   '31': { icon: 'icons/coal.svg', color: '#C75746', bcolor: '#09C746' },          //土木費
   '32': { icon: 'icons/housing.svg', color: '#C75746', bcolor: '#09C746' },       //災害復旧費
 
-  '4' : { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#D33673' }, //教育
-  '41': { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#D33673' },   //教育費
+  '4' : { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#F316A3' }, //教育
+  '41': { icon: 'icons/pre-school.svg', color: '#C75746', bcolor: '#F316A3' },   //教育費
 
-  '5' : { icon: 'icons/government.svg', color: '#C75746', bcolor: '#2A3A03' },    //政策
-  '51': { icon: 'icons/courts.svg', color: '#C75746', bcolor: '#2A3A03' },          //議会費
-  '52': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#2A3A03' },   //総務費
+  '5' : { icon: 'icons/government.svg', color: '#C75746', bcolor: '#0356F6' },    //政策
+  '51': { icon: 'icons/courts.svg', color: '#C75746', bcolor: '#0356F6' },          //議会費
+  '52': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0356F6' },   //総務費
 
   '6' : { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#EC2406' }, //商工
   '61': { icon: 'icons/admin.svg', color: '#C75746', bcolor: '#EC2406' },   //商工費
 
-  '7' : { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#938626' }, //農林水産
-  '71': { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#938626' },   //農林水産費
+  '7' : { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#037626' }, //農林水産
+  '71': { icon: 'icons/farms.svg', color: '#C75746', bcolor: '#037626' },   //農林水産費
 
   '8' : { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#C75746' }, //消防
   '81': { icon: 'icons/fire-brigade.svg', color: '#C75746', bcolor: '#C75746' },   //消防費
