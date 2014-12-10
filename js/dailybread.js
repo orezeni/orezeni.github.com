@@ -45,7 +45,7 @@ OpenSpending.DailyBread = function (elem) {
       value: this.salaryVal,
       min: 1000000,
       max: 20000000,
-      step: 10000,
+      step: 1000,
       animate: true,
       slide: function () { self.sliderUpdated.apply(self, arguments) }
     })
