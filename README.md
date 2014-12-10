@@ -1,6 +1,6 @@
-# 俺のゼニはどこ行った for 横浜
+# 俺のゼニはどこ行った for 加古川
 
-wheredoesmymoney.orgの横浜バージョンです．
+wheredoesmymoney.orgの加古川バージョンです．
 
 http://spending.jp/ で稼働しているサイトのソースコードです。
 
@@ -10,6 +10,13 @@ Where Does My Money Go? β版（2012年7月1日稼働）は、横浜市民が横
 
 なお、このサイトは、公共データのオープン化によって、地域社会を変え、日本社会を変え、世界にも影響を与え、貢献して行こうという思いを持って集まった以下のメンバーによって構築、運営されています。
 
+team 人材育成
+
+沖野　保志(Yasushi Okino),(Developer)
+蓬莱　大流(Masaru Hourai),(Developer)
+藤中　紳之介(sinnnosuke Fujinaka),(Developer)
+奥村　健也(Kenya Okumura),(Coordinator)
+高野　敦子(Atuko Takano),(Adviser)
 
 Core Team: (@は Twitter Account)
 
