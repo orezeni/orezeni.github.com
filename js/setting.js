@@ -10,7 +10,7 @@ Taxes.taxRate = 0.06; // 住民税率
 
 var OpenSpending = OpenSpending || {};
 
-OpenSpending.identifier = 'jinzai2014ikusei';
+OpenSpending.identifier = 'jinzai2012ikusei';
 OpenSpending.year = '2014';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
@@ -19,7 +19,7 @@ OpenSpending.Styles.Cofog = {
 
   /* yokohama cofog */
   '100': { icon: 'icons/planning.svg', color: '#4169E1', bcolor: '#98fb98' },
-  '101': { icon: 'icons/plannig.svg', color: '#4169E1', bcolor: '#98fb98' },
+  '100-101': { icon: 'icons/planning.svg', color: '#4169E1', bcolor: '#98fb98' },
   '200': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' },
   '200-201': { icon: 'icons/publicaffairs.svg', color: '#C75746', bcolor: '#0AB971' },
   '300': { icon: 'icons/financial-admin.svg', color: '#C75746', bcolor: '#4E6D00' },
