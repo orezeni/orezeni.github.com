@@ -44,7 +44,7 @@ OpenSpending.DailyBread = function (elem) {
     this.$e.find('.wdmmg-slider').slider({
       value: this.salaryVal,
       min: 1000000,
-      max: 20000000,
+      max: 30000000,
       step: 1000,
       animate: true,
       slide: function () { self.sliderUpdated.apply(self, arguments) }
