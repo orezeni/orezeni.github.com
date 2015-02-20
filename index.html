@@ -70,7 +70,7 @@ function getAggregator(db, year){
      apiUrl: 'http://openspending.org/api',
      //localApiCache: 'aggregate.json',
      dataset: OpenSpending.identifier,
-     drilldowns: ['Category', 'Subcategory'],
+     drilldowns: ['category', 'subcategory'],
      cuts: ['year:' + year],
      rootNodeLabel: 'Total',
      breakdown: 'Subcategory',

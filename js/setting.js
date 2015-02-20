@@ -11,7 +11,7 @@ Taxes.capitaBasis = 3500; //均等割 平成25年度
 
 var OpenSpending = OpenSpending || {};
 
-OpenSpending.identifier = 'yokohama_budget';
+OpenSpending.identifier = 'nomi_budget_2013';
 OpenSpending.year = '2013';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
