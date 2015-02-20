@@ -7,11 +7,12 @@ var Taxes = Taxes || {};
 Taxes.baseKoujo = 330000; // 住民税基礎控除
 Taxes.huyoKoujo = 330000; // 一人分の扶養控除
 Taxes.taxRate = 0.06; // 住民税率
+Taxes.capitaBasis = 3500; //均等割 平成25年度
 
 var OpenSpending = OpenSpending || {};
 
-OpenSpending.identifier = 'nomi-city-2013';
-OpenSpending.year = '2013';
+OpenSpending.identifier = 'nomi-city-2014';
+OpenSpending.year = '2014';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
 
