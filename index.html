@@ -2,7 +2,6 @@
 layout: default
 title: The Daily Bread
 ---
-<!--
 <script>
 
 yepnope({
@@ -60,13 +59,11 @@ yepnope({
 
 
 </script>
--->
-<script src="js/dailybread-page.js"></script>
-
 <div id="dailybread">
   <!--
   <h2 class="page-header">The Daily Bread <small> Costs for the British Taxpayer per Day</small></h2>
   -->
+  {% include local-gov-select.html %}
   <div>
     <h2 style="width:240px;display:inline-block;vertical-align:top;">あなたの世帯タイプは？</h2>
     <div id="select-dependents-type" style="width:450px;display:inline-block;">
