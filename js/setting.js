@@ -12,7 +12,7 @@ Taxes.capitaBasis = 3500; //均等割 平成25年度
 var OpenSpending = OpenSpending || {};
 
 OpenSpending.identifier = 'nomi_budget';
-OpenSpending.year = '2013';
+OpenSpending.year = '2014';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
 
