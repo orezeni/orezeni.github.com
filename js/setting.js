@@ -11,8 +11,8 @@ Taxes.capitaBasis = 3500; //均等割 平成25年度
 
 var OpenSpending = OpenSpending || {};
 
-OpenSpending.identifier = 'nomi-city-2013';
-OpenSpending.year = '2013';
+OpenSpending.identifier = 'nomi-city-2014_budget1';
+OpenSpending.year = '2014';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
 
