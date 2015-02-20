@@ -17,7 +17,8 @@ OpenSpending.year = '2013';
 OpenSpending.Styles = OpenSpending.Styles || {};
 
 OpenSpending.Styles.Cofog = {
- /* nomi city cofog */
+
+  /* nomi city cofog */
   '1': { icon: 'icons/government-uk.svg', color: '#C75746', bcolor: '#935B3B' },
   '101': { icon: 'icons/government-uk.svg', color: '#C75746', bcolor: '#935B3B' },
   '2': { icon: 'icons/government.svg', color: '#C75746', bcolor: '#0AB971' },
@@ -68,4 +69,5 @@ OpenSpending.Styles.Cofog = {
   '14': { icon: 'icons/javni_dug.svg', color: '#C75746', bcolor: '#556B2F' },
   '135': { icon: 'icons/javni_dug.svg', color: '#C75746', bcolor: '#556B2F' }
 };
+
 
