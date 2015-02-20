@@ -22,10 +22,18 @@ yepnope({
     (function ($) {
 
       $(function () {
+        
+        // 年変更イベント
+        $("#year").change(function(){
+          getAggregator(db, this.value);
+        });
 
         $('#preloader .txt').html('loading data');
 
        var db = new OpenSpending.DailyBread($('#dailybread'));
+       
+       getAggregator(db, '2014');
+/*       
        new OpenSpending.Aggregator({
            apiUrl: 'http://openspending.org/api',
            //localApiCache: 'aggregate.json',
@@ -50,20 +58,53 @@ yepnope({
             db.draw();
            }
         });
-
+*/
         OpenSpending.renderDependentTypes(db);
       });
     })(jQuery)
   }
 });
 
+function getAggregator(db, year){
+  new OpenSpending.Aggregator({
+     apiUrl: 'http://openspending.org/api',
+     //localApiCache: 'aggregate.json',
+     dataset: OpenSpending.identifier,
+     drilldowns: ['Category', 'Subcategory'],
+     cuts: ['year:' + year],
+     rootNodeLabel: 'Total',
+     breakdown: 'Subcategory',
+     callback: function(data) {
+
+      $('#content-wrap').show();
+      $('#preloader').remove();
+
+      db.setDataFromAggregator(data, ['unknown']);
+      db.setIconLookup(function(name) {
+        var style = OpenSpending.Styles.Cofog[name];
+        if (style != undefined) {
+         return style['icon'];
+        }
+        return 'icons/unknown.svg';
+      });
+      db.draw();
+     }
+  });
+}
 
 </script>
 <div id="dailybread">
   <!--
   <h2 class="page-header">The Daily Bread <small> Costs for the British Taxpayer per Day</small></h2>
   -->
-  {% include local-gov-select.html %}
+<div>
+    <h2 style="width:240px;display:inline-block;vertical-align:top;">みてみたい年度は？</h2>
+    <select id="year">
+      <option value="2014">平成 26 年度</option>
+      <option value="2013">平成 25 年度</option>
+    </select>
+  </div>  
+  <!--{% include local-gov-select.html %}-->
   <div>
     <h2 style="width:240px;display:inline-block;vertical-align:top;">あなたの世帯タイプは？</h2>
     <div id="select-dependents-type" style="width:450px;display:inline-block;">
