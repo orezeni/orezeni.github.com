@@ -18,7 +18,7 @@ OpenSpending.Styles = OpenSpending.Styles || {};
 
 OpenSpending.Styles.Cofog = {
 /* nomi city cofog */
-   '1': { icon: 'icons/legislative.svg', color: '#ff9d00', bcolor: '#935B3B' },
+    '1': { icon: 'icons/legislative.svg', color: '#ff9d00', bcolor: '#935B3B' },
   '101': { icon: 'icons/legislative.svg', color: '#ff9d00', bcolor: '#935B3B' },
   '2': { icon: 'icons/publicaffairs.svg', color: '#ff9d00', bcolor: '#0AB971' },
   '201': { icon: 'icons/publicaffairs.svg', color: '#ff9d00', bcolor: '#0AB971' },
@@ -75,5 +75,4 @@ OpenSpending.Styles.Cofog = {
   '13': { icon: 'icons/money.svg', color: '#ff9d00', bcolor: '#790586' },
   '1301': { icon: 'icons/money.svg', color: '#ff9d00', bcolor: '#790586' }
 };
-
 
