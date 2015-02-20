@@ -11,13 +11,12 @@ Taxes.capitaBasis = 3500; //均等割 平成25年度
 
 var OpenSpending = OpenSpending || {};
 
-OpenSpending.identifier = 'nomi_budget_2013';
-OpenSpending.year = '2013';
+OpenSpending.identifier = 'nomi_budget';
+OpenSpending.year = '2014';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
 
 OpenSpending.Styles.Cofog = {
-
   /* nomi city cofog */
   '1': { icon: 'icons/government-uk.svg', color: '#C75746', bcolor: '#935B3B' },
   '101': { icon: 'icons/government-uk.svg', color: '#C75746', bcolor: '#935B3B' },
@@ -62,8 +61,10 @@ OpenSpending.Styles.Cofog = {
  '129': { icon: 'icons/schools.svg', color: '#C75746', bcolor: '#790586' },
  '130': { icon: 'icons/sports.svg', color: '#C75746', bcolor: '#790586' },
   '11': { icon: 'icons/restoration.svg', color: '#C75746', bcolor: '#867905' },
-  '131': { icon: 'icons/restoration.svg', color: '#C75746', bcolor: '#867905' },  '12': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#FFD700' },
-  '132': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#FFD700' },  '13': { icon: 'icons/japanese-money.svg', color: '#C75746', bcolor: '#FFA500' },
+  '131': { icon: 'icons/restoration.svg', color: '#C75746', bcolor: '#867905' }, 
+   '12': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#FFD700' },
+  '132': { icon: 'icons/public-debt.svg', color: '#C75746', bcolor: '#FFD700' }, 
+   '13': { icon: 'icons/japanese-money.svg', color: '#C75746', bcolor: '#FFA500' },
   '133': { icon: 'icons/japanese-money.svg', color: '#C75746', bcolor: '#FFA500' },
   '134': { icon: 'icons/japanese-money.svg', color: '#C75746', bcolor: '#FFA500' },
   '14': { icon: 'icons/javni_dug.svg', color: '#C75746', bcolor: '#556B2F' },

@@ -1,11 +1,13 @@
 OpenSpending = "OpenSpending" in window ? OpenSpending : {};
 
+
 (function ($) {
 
 var dependentType = 'single'; // 世帯タイプ初期値
 var baseKoujo = Taxes.baseKoujo; // 住民税基礎控除
 var huyoKoujo = Taxes.huyoKoujo; // 一人分の扶養控除
 var taxRate = Taxes.taxRate; // 住民税率
+var capitaBasis = Taxes.capitaBasis; //均等割
 
 var formatCurrency = function (val, prec, sym, dec, sep) {
   prec = prec === undefined ? 2 : prec
@@ -111,8 +113,34 @@ OpenSpending.DailyBread = function (elem) {
   }
 
   this.setSalary = function (salary) {
+    var temp = salary
+    if (1000000 <= temp  && temp < 1620000) {
+	temp = temp - 650000;
+    } else if (temp == 1620000){
+	temp = 970000;
+    } else if (1630000 <= temp && temp < 1800000) {
+	temp = temp / 4 * 4 *0.6; 
+    } else if (1800000 <= temp && temp < 3600000){
+	temp = temp / 4 * 4 * 0.7 - 180000;
+    } else if (3600000 <= temp && temp < 6600000) {
+	temp = temp / 4 * 4 * 0.8 - 540000;
+    } else if (6600000 <= temp && temp < 10000000) {
+	temp = temp * 0.9 - 1200000;
+    } else if (10000000 <= temp && temp < 15000000) {
+	temp = temp * 0.95 - 1700000;
+    } else if (15000000 <= temp) {
+	temp = temp - 2450000;
+    }
+
     self.salaryVal = salary
-    self.taxVal = (salary - (baseKoujo + (dependentType == 'family' ? huyoKoujo : 0))) * taxRate;
+    var taxtemp = 0;
+    taxtemp = (temp - (baseKoujo + (dependentType == 'family' ? huyoKoujo : 0))) * taxRate - capitaBasis;
+    
+    if (taxtemp < 3000) {
+ 	taxtemp = capitaBasis;
+    }
+
+    self.taxVal = taxtemp;
   }
 
   this.draw = function () {
