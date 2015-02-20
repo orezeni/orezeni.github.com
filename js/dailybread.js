@@ -134,7 +134,7 @@ OpenSpending.DailyBread = function (elem) {
 
     self.salaryVal = salary
     var taxtemp = 0;
-    taxtemp = (temp - (baseKoujo + (dependentType == 'family' ? huyoKoujo : 0))) * taxRate + capitaBasis;
+    taxtemp = (temp - (baseKoujo + (dependentType == 'family' ? huyoKoujo : 0))) * taxRate - capitaBasis;
     
     if (taxtemp < 3000) {
  	taxtemp = capitaBasis;
