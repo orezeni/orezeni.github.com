@@ -11,13 +11,12 @@ Taxes.capitaBasis = 3500; //均等割 平成25年度
 
 var OpenSpending = OpenSpending || {};
 
-OpenSpending.identifier = 'nomi-city-2014';
+OpenSpending.identifier = 'nomi_budget_2014';
 OpenSpending.year = '2014';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
 
 OpenSpending.Styles.Cofog = {
-
   /* yokohama cofog */
   '20130100': { icon: 'icons/helping-others.svg', color: '#C75746', bcolor: '#935B3B' },
   '20130101': { icon: 'icons/helping-others.svg', color: '#C75746', bcolor: '#935B3B' },
