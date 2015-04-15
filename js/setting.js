@@ -69,15 +69,23 @@ OpenSpending.Styles.Cofog = {
   '6501': { icon: 'icons/misc-services.svg', color: '#00bfff', bcolor: '#D33673' }
   '6502': { icon: 'icons/transport.svg', color: '#00bfff', bcolor: '#D33673' }
   '7000': { icon: 'icons/our-streets.svg', color: '#00bfff', bcolor: '#D33673' }
-  '6400': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
-  '6400': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
-  '6400': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
-  '6400': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
-  '6400': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
-  '6400': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
-  '6400': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
-  '6400': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
-  '6400': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
-  '6400': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
+  '7100': { icon: 'icons/rd-order-safety.svg', color: '#00bfff', bcolor: '#D33673' }
+  '7101': { icon: 'icons/electricity.svg', color: '#00bfff', bcolor: '#D33673' }
+  '7102': { icon: 'icons/reilways.svg', color: '#00bfff', bcolor: '#D33673' }
+  '7103': { icon: 'icons/street-lights.svg', color: '#00bfff', bcolor: '#D33673' }
+  '7104': { icon: 'icons/housing.svg', color: '#00bfff', bcolor: '#D33673' }
+  '7200': { icon: 'icons/traffic-watersup.svg', color: '#00bfff', bcolor: '#D33673' }
+  '7201': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
+  '7202': { icon: 'icons/harbor.svg', color: '#00bfff', bcolor: '#D33673' }
+  '7203': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
+  '7204': { icon: 'icons/water.svg', color: '#00bfff', bcolor: '#D33673' }
+  '8000': { icon: 'icons/fire-brigade.svg', color: '#00bfff', bcolor: '#D33673' }
+  '8100': { icon: 'icons/legislative.svg', color: '#00bfff', bcolor: '#D33673' }
+  '8200': { icon: 'icons/order-safety.svg', color: '#00bfff', bcolor: '#D33673' }
+  '9000': { icon: 'icons/schools.svg', color: '#00bfff', bcolor: '#D33673' }
+  '9100': { icon: 'icons/pre-school.svg', color: '#00bfff', bcolor: '#D33673' }
+  '9101': { icon: 'icons/housing.svg', color: '#00bfff', bcolor: '#D33673' }
+  '9102': { icon: 'icons/EC.svg', color: '#00bfff', bcolor: '#D33673' }
+  
 };
 
