@@ -132,6 +132,10 @@ OpenSpending.DailyBread = function (elem) {
     var tdAry = self.taxAndDataForTier(tierId)
     if (!tdAry) { return } // No child tier for selected area.
     var tax = tdAry[0], data = tdAry[1]
+  
+  if (tdAry == null ||tdAry[1][0][1] == 0){ return }
+    if (!tdAry) { return } // No child tier for selected area.
+    var tax = tdAry[0], data = tdAry[1]
 
     var t = self.tiers[tierId] = self.tiers[tierId] || $("<div class='db-tier' data-db-tier='" + tierId + "'></div>").appendTo(self.$e)
     var n = data.length
