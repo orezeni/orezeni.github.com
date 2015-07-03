@@ -33,7 +33,7 @@ OpenSpending.Styles.Cofog = {
   '3100': { icon: 'icons/EC.svg', color: '#00bfff', bcolor: '#EC2406' },
   '3101': { icon: 'icons/euro.svg', color: '#00bfff', bcolor: '#EC2406' },
   '3102': { icon: 'icons/secondary-lower.svg', color: '#00bfff', bcolor: '#938626' },
-  '3103': { icon: 'icons/preschool.svg', color: '#00bfff', bcolor: '#938626' },
+  '3103': { icon: 'icons/bouy.svg', color: '#00bfff', bcolor: '#938626' },
   '3104': { icon: 'icons/bosi.svg', color: '#00bfff', bcolor: '#C75746' },
   '3105': { icon: 'icons/unemployment.svg', color: '#00bfff', bcolor: '#C75746' },
   '3106': { icon: 'icons/helping-others.svg', color: '#C#00bfff', bcolor: '#D33673' },
