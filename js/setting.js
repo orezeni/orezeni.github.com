@@ -96,4 +96,5 @@ OpenSpending.Styles.Cofog = {
   '9300': { icon: 'icons/primary.svg', color: '#00bfff', bcolor: '#D33673' },
   '9602': { icon: 'icons/shefu.svg', color: '#00bfff', bcolor: '#D33673' },
   '9707': { icon: 'icons/prisons.svg', color: '#00bfff', bcolor: '#D33673' },
+  '9708': { icon: 'icons/books.svg', color: '#00bfff', bcolor: '#D33673' },
 };
