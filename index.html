@@ -31,14 +31,31 @@ yepnope({
            apiUrl: 'http://openspending.org/api',
            //localApiCache: 'aggregate.json',
            dataset: OpenSpending.identifier,
-           drilldowns: ['Category', 'Subcategory'],
+           drilldowns: ['Category', 'Subcategory','Subcategory02'],
            cuts: ['year:' + OpenSpending.year],
            rootNodeLabel: 'Total',
-           breakdown: 'Subcategory',
+           breakdown: 'Category',
            callback: function(data) {
 
             $('#content-wrap').show();
             $('#preloader').remove();
+             var work = {};
+            var i;
+            var n = 9;
+            var j;
+            console.log(data);
+            for(i=0;i< n-1;i++){
+                for(j=n-1;j>i;j--){
+                    if(data.children[j-1]["amount"] <data.children[j]["amount"]){
+                        work = data.children[j];
+                        data.children[j] = data.children[j-1];
+                        data.children[j-1] = work;
+                    }
+                }
+            }
+            work = data.children[1];
+            delete data.children[1];
+            data.children.push(work);
 
             db.setDataFromAggregator(data, ['unknown']);
             db.setIconLookup(function(name) {
@@ -89,7 +106,7 @@ yepnope({
      </div>
 
      <div id="db-tax" class="layout-col layout-col-3">
-      <h2>あなたの横浜市税（年間）</h2>
+      <h2>あなたの加古川市税（年間）</h2>
       <p>&yen;31.12</p>
      </div>
     </div><!-- /#db-topbar -->

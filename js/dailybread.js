@@ -132,6 +132,10 @@ OpenSpending.DailyBread = function (elem) {
     var tdAry = self.taxAndDataForTier(tierId)
     if (!tdAry) { return } // No child tier for selected area.
     var tax = tdAry[0], data = tdAry[1]
+  
+  if (tdAry == null ||tdAry[1][0][1] == 0){ return }
+    if (!tdAry) { return } // No child tier for selected area.
+    var tax = tdAry[0], data = tdAry[1]
 
     var t = self.tiers[tierId] = self.tiers[tierId] || $("<div class='db-tier' data-db-tier='" + tierId + "'></div>").appendTo(self.$e)
     var n = data.length
@@ -194,7 +198,7 @@ OpenSpending.DailyBread = function (elem) {
       var iconUrl, paper;
       iconUrl = $(e).data('svg-url');
       paper = Raphael(e, iconRad+iconRad,iconRad+iconRad+5);
-      paper.circle(iconRad,iconRad,iconRad).attr({ fill: '#830242', stroke: 'none' });
+      paper.circle(iconRad,iconRad,iconRad).attr({ fill: '#00bfff', stroke: 'none' });
       paper.circle(iconRad,iconRad,iconRad-2).attr({ fill: 'none', stroke: '#eee', opacity: .8, 'stroke-dasharray': '- ' });
       $.get(iconUrl, function(svg) {
         if (typeof(svg) == "string") {
@@ -233,7 +237,7 @@ OpenSpending.renderDependentTypes = function(db) {
     $(target).bind('click', handleClick);
 
     var r = Raphael(target, iconRad * 2, iconRad * 2 + 5);
-    r.circle(iconRad,iconRad,iconRad).attr({ fill: '#830242', stroke: 'none' });
+    r.circle(iconRad,iconRad,iconRad).attr({ fill: '#00ffff', stroke: 'none' });
     r.circle(iconRad,iconRad,iconRad-2).attr({ fill: 'none', stroke: '#eee', opacity: .8, 'stroke-dasharray': '- ' });
     $.get(iconPath, function(svg) {
       if (typeof(svg) == "string") {

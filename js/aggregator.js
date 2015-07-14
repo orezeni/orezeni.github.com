@@ -72,7 +72,7 @@ var OpenSpending = OpenSpending || {};
           return config.localApiCache;
         }
         apiUrl = config.apiUrl || config.siteUrl + '/api';
-        return apiUrl + '/2/aggregate';
+       return apiUrl + '/2/aggregate';
     };
 
       /**
