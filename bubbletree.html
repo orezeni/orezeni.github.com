@@ -62,9 +62,9 @@ title: 使途別予算額
             localApiCache: "aggregate.json",
             dataset: OpenSpending.identifier,
             rootNodeLabel: "Total",
-            drilldowns: ["Category", "Subcategory"],
+            drilldowns: ["cofog1", "cofog2"],
             cuts: ["year:" + OpenSpending.year],
-            breakdown: "Subcategory",
+            breakdown: "region",
             callback: dataLoaded,
           });
         });
