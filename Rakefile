@@ -3,7 +3,7 @@ task :default => [:preview]
 # Usage: rake preveiw
 desc "Launch preview environment"
 task :preview do
-	sh "jekyll --server --auto"
+	sh "jekyll serve --watch"
 end
 
 desc "deploy GitHub:Pages"
