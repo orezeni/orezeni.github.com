@@ -27,14 +27,13 @@ title: The Daily Bread
             apiUrl: "http://openspending.org/api",
             localApiCache: "aggregate.json",
             dataset: OpenSpending.identifier,
-            drilldowns: ["Category", "Subcategory"],
+            drilldowns: ["cofog1", "cofog2"],
             cuts: ["year:" + OpenSpending.year],
             rootNodeLabel: "Total",
-            breakdown: "Subcategory",
+            breakdown: "region",
             callback: function (data) {
               $("#content-wrap").show();
               $("#preloader").remove();
-
               db.setDataFromAggregator(data, ["unknown"]);
               db.setIconLookup(function (name) {
                 var style = OpenSpending.Styles.Cofog[name];
